@@ -235,26 +235,24 @@
 
       $(".about-toggle").click(function(){
 
-        console.log("mcfuckity click");
-
         if (content.hasClass(HIDE_CLASS)) { // show about_panel
           content.removeClass(HIDE_CLASS);
           aboutPanel.addClass('zoomIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            console.log("animation end");
-            aboutPanel.removeClass('zoomIn')
-          });;
+            aboutPanel.removeClass('zoomIn');
+          });
         } else { //hide about_panel
           aboutPanel.addClass('zoomOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             console.log("animation end");
             content.addClass(HIDE_CLASS);
-            aboutPanel.removeClass('zoomOut')
+            aboutPanel.removeClass('zoomOut');
           });
          }
 
         return false;
       });
 
-    }
+    };
+
     $(main);
 
     </script>
