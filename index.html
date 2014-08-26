@@ -27,7 +27,7 @@
 
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
- <style>
+<style>
 
   html {
     background:
@@ -167,6 +167,9 @@
     max-width: 350px;
   }
 
+  .close-button {
+    width: 3em;
+  }
 </style>
 
 </head>
@@ -184,7 +187,7 @@
       <a href="http://cargocollective.com/shonareed"><img class="portfolio-link block" src="images/button.svg"  alt="view my portfolio"/></a>
 
       <div id="about-panel" class="animated about-me">
-        <header ><a href="#" class="about-toggle"><img src="images/close.svg"/></a></header>
+        <header ><a href="#" class="about-toggle"><img class="close-button outline-outward" src="images/close.svg"/></a></header>
         <article class="bio">
           <div class="blurb">
             <img class="id-badge" src="images/hi_res.png"/>
@@ -227,9 +230,9 @@
     <script>
     var main = function(){
       "use strict";
-      var HIDE_CLASS = "hide-about-me";
 
-      var content = $("#content-wrapper");
+      var HIDE_CLASS = "hide-about-me";
+      var content    = $("#content-wrapper");
       var aboutPanel = $("#about-panel");
 
       content.addClass('hide-about-me');
@@ -243,7 +246,6 @@
           });
         } else { //hide about_panel
           aboutPanel.addClass('zoomOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            console.log("animation end");
             content.addClass(HIDE_CLASS);
             aboutPanel.removeClass('zoomOut');
           });
