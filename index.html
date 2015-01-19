@@ -50,7 +50,7 @@
   }
 
   p {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
   .block {
@@ -69,7 +69,7 @@
   }
 
   DIV.about-me {
-    background-color:white;
+    background-color:#58A6A2;
     color: #222;
   }
 
@@ -79,15 +79,20 @@
 
   article.bio .id-badge {
     float: left;
-    margin: -15em 4%;
-    width:33%;
+    margin: -15em -4%;
+    width:25%;
     max-width:250px;
   }
 
   article.bio .blurb {
     text-align: justify;
     padding: 2% 5%;
+    color: white;
+  }
 
+  article.bio .blurb P SPAN {
+    color: black;
+    font-weight: 600
   }
 
   article .img-icons {
@@ -163,12 +168,16 @@
   }
 
   .portfolio-link {
-    width:50%;
+    width:33%;
     max-width: 350px;
   }
 
   .close-button {
     width: 3em;
+  }
+
+  P > SPAN {
+    color:red;
   }
 </style>
 
@@ -192,21 +201,23 @@
           <div class="blurb">
             <img class="id-badge" src="images/hi_res.png"/>
             <p>
-              I am a lead UX Researcher & Designer with over ten years experience leading UX 
-              and service design projects across multiple channels. I have aided many companies, 
-              from startups to Fortune 500 companies to launch successful products. My approach 
-              balances qualitative and quantitive research methods with creative flair and a 
-              genuine passion for creating products people are excited to use. 
+              I am a lead <span>UX Researcher & Designer</span> with over ten years experience leading UX
+              and service design projects across multiple channels. I have aided many companies,
+              from startups to Fortune 500 companies to launch successful products.
+            </p>
+            <p>My approach balances <span>qualitative and quantitive research</span> methods with creative
+               flair and a genuine passion for creating products <span>people are excited</span> to use.
             </p>
             <p>
-              My clients include Hewlett Packard, Snapfish by HP, Bank of America, Publicis Worldwide, 
-              Bluewolf Marketing, San Francisco Chronicle, Salesforce, MTV and various San Francisco 
-              and Barcelona startups.
-            </p>
-            <p>
-              I was born in Scotland, grew up in California and currently live in Barcelona, although I 
+              I was born in Scotland, grew up in California and currently live between <span>Barcelona and London</span>, although I
               enjoy travelling for work and fun.
             </p>
+            <p>
+              My clients include Hewlett Packard, Snapfish by HP, Bank of America, Publicis Worldwide,
+              Bluewolf Marketing, San Francisco Chronicle, Salesforce, MTV and various San Francisco
+              and Barcelona startups.
+            </p>
+
           </div>
           <footer>Contact me to discuss your next project.
           </footer>
