@@ -38,84 +38,81 @@
     url(images/bg_bottom.png) top center repeat-x fixed,
     url(images/bg_top.png) bottom center repeat fixed;
     background-color : #333;
-    min-width        : 400px;
+    min-width        : 320px;
   }
 
   body {
-    font-family:"Noto Sans", sans;
-    margin:0;
-    line-height: 1.6;
+   font-family    : "Noto Sans", sans;
+   margin         : 0;
+   line-height    : 1.6;
   }
 
   h1 {
-    font-size: 4em;
-    margin:0;
-    text-align: right;
+   font-size      : 4em;
+   margin         : 0;
+   text-align     : right;
   }
 
   p {
-    font-size: 14pt;
+   font-size      : 18px;
+   line-height    : 1.5em;
+   padding-bottom : 0.5em;
   }
 
   .block {
-    display : block;
-    padding : 2%;
+   display        : block;
+   padding        : 2%;
   }
 
   #header-vertical-space {
-   padding-top: 10%;
+   padding-top    : 10%;
   }
 
   article.main {
-    background    : #000;
-    margin-bottom : 25%;
-    text-align: justify;
-  }
-
-  DIV.about-me {
-    background-color:#58A6A2;
-    color: #222;
+   background     : #000;
+   margin-bottom  : 25%;
+   text-align     : justify;
   }
 
   article.main header {
-    padding-top: 2%;
+   padding-top    : 2%;
   }
 
   article.bio .id-badge {
-    float: left;
-    margin: -15em -4%;
-    width:25%;
-    max-width:250px;
+   float          : left;
+   margin         : -15em -4%;
+   width          : 25%;
+   max-width      : 250px;
   }
 
   article.bio .blurb {
-    text-align: justify;
-    padding: 2% 5%;
-    color: white;
-    max-width: 980px;
+   text-align     : justify;
+   padding        : 2% 5%;
+   color          : #333;
+   max-width      : 980px;
+   color          : rgba(0,0,0,0.65);
   }
 
   article.bio .blurb P SPAN {
-    color: black;
-    font-weight: 600;
+    color          : white;
+    font-weight    : 600;
   }
 
   article .img-icons {
-    _padding-top    : 4%;
     padding-bottom : 4%;
-    margin-top: -2em;
+    margin-top     : -2em;
   }
 
   article .img-icons img {
-    height        : 5em;
-    border-radius : 50%;
-    float         : left;
+    height         : 12.5%;
+    border-radius  : 50%;
+    float          : left;
   }
 
   footer {
-    padding: 0 0 2em 0;
-    font-weight: 900;
-    font-size: 24pt;
+    padding        : 0 0 2em 0;
+    font-weight    : 900;
+    font-size      : 24pt;
   }
 
   .outline-outward {
@@ -159,31 +156,31 @@
   }
 
   .nametag {
-    width: 40%;
-    max-width:400px;
+    width            : 40%;
+    max-width        : 400px;
+  }
+
+  .about-me {
+    background-color : #58A6A2;
   }
 
   .hide-about-me .about-me {
-    display:none;
+    display          : none;
   }
 
   .id-button {
-    display: none;
+    display          : none;
   }
 
   .hide-about-me .id-button {
-    display: inline-block;
+    display          : inline-block;
   }
 
   .portfolio-link {
-    width:33%;
-    max-width: 350px;
-    margin-bottom: 2em;
-  }
-
-  .close-button {
-    display:none;
-    width: 3em;
+    width            : 33%;
+    max-width        : 350px;
+    min-width        : 180px;
+    margin-bottom    : 2em;
   }
 
 </style>
@@ -203,7 +200,7 @@
       <a href="http://cargocollective.com/shonareed"><img class="portfolio-link block" src="images/button.svg"  alt="view my portfolio"/></a>
 
       <div id="about-panel" class="animated about-me">
-        <header ><a href="#" class="about-toggle"><img class="close-button outline-outward" src="images/close.svg"/></a></header>
+        <header ></header>
         <article class="bio">
           <div class="blurb">
             <img class="id-badge" src="images/hi_res.png"/>
