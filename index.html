@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<title>Shona Reed : UX Researcher</title>
 <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
-<meta name="description" content="I am a lead <span>UX Researcher & Designer</span> with over ten years experience leading UXand service design projects across multiple channels. I have aided many companies, from startups to Fortune 500 companies to launch successful products.">
+<meta name="description" content="UX Researcher & Designer, ten years experience, startups to Fortune 500, qualitative and quantitative research, genuine passion, Barcelona, London, San Francisco">
 
 <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -151,7 +151,7 @@
     bottom: -3px;
     left  : -3px;
 
-    border-color     : #ffd7b0;
+    border-color     : #58A6A2; /* #ffd7b0;*/
 
   }
 
@@ -197,7 +197,7 @@
 
       <img class="nametag block" src="images/shona_logo.svg" alt="Shona Reed UX Researcher & Designer"/>
 
-      <a href="http://cargocollective.com/shonareed"><img class="portfolio-link block" src="images/button.svg"  alt="view my portfolio"/></a>
+      <a id="portfolioOutbound" class="gaClick" href="http://cargocollective.com/shonareed"><img class="portfolio-link block" src="images/button.svg"  alt="view my portfolio"/></a>
 
       <div id="about-panel" class="animated about-me">
         <header ></header>
@@ -205,7 +205,7 @@
           <div class="blurb">
             <img class="id-badge" src="images/hi_res.png"/>
             <p>
-              I am a lead <span>UX Researcher & Designer</span> with over ten years experience leading UX
+              I am a lead <span>UX Researcher & Designer</span> with over <span>ten years experience</span> leading UX
               and service design projects across multiple channels. I have aided many companies,
               from <span>startups to Fortune 500 companies</span> to launch successful products.
             </p>
@@ -228,16 +228,16 @@
         </article>
       </div>
       <div class="img-icons">
-        <a class="outline-outward id-button about-toggle"           href="about">
+        <a class="outline-outward id-button about-toggle" href="about">
           <img src="images/hi_res.png" alt="about me"/>
         </a>
-        <a class="outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
+        <a id="linkedinOutbound" class="gaClick outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
           <img class="" src="images/linkedin_icon.svg" alt="linkedin"/>
         </a>
-        <a class="outline-outward twitter"   href="https://twitter.com/uxisready?refsrc=email">
+        <a id="twitterOutbound" class="gaClick outline-outward twitter" href="https://twitter.com/uxisready?refsrc=email">
           <img class="" src="images/twitter_icon.svg" alt="twitter"/>
         </a>
-        <a class="outline-outward email"     href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
+        <a id="emailOutbound" class="gaClick outline-outward email" href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
           <img class="" src="images/email_icon.svg" alt="email ux@shonareed.com"/>
         </a>
       </div>
@@ -246,6 +246,17 @@
     </article>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58738328-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script>
     var main = function(){
       "use strict";
 
@@ -253,22 +264,20 @@
       var content    = $("#content-wrapper");
       var aboutPanel = $("#about-panel");
 
-      content.addClass('hide-about-me');
+      content.addClass(HIDE_CLASS);
+
+      $(".gaClick").click(function(){
+         ga('send', this.id);
+      });
 
       $(".about-toggle").click(function(){
-
+        ga('send', 'aboutMeClicked');
         if (content.hasClass(HIDE_CLASS)) { // show about_panel
           content.removeClass(HIDE_CLASS);
           aboutPanel.addClass('zoomIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             aboutPanel.removeClass('zoomIn');
           });
-        } else { //hide about_panel
-          aboutPanel.addClass('zoomOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            content.addClass(HIDE_CLASS);
-            aboutPanel.removeClass('zoomOut');
-          });
-         }
-
+        }
         return false;
       });
 
