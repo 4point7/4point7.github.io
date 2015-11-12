@@ -91,7 +91,7 @@
     <header>
         <div id="header-vertical-space"></div>
     </header>
-    <article id="content-wrapper" class="main hide-about-me hide-portfolio">
+    <article id="content-wrapper" class="main hide-about hide-portfolio">
         <center>
             <img class="nametag block" src="assets/images/shona_logo.svg" alt="Shona Reed UX Researcher & Designer" />
             <a id="portfolioButton" class="gaClick portfolio-toggle" href="about"><img class="portfolio-link block" src="assets/images/button.svg" alt="view my portfolio" /></a>
@@ -109,7 +109,7 @@
                     <img class="" src="assets/images/email_icon.svg" alt="email ux@shonareed.com" />
                 </a>
             </div>
-            <div id="portfolio-panel" class="animated portfolio">
+            <div id="portfolio" class="animated portfolio">
                 <header></header>
                 <article class="bio">
                   <div id="content" class="container blur">
@@ -118,7 +118,7 @@
                     <footer></footer>
                 </article>
             </div>
-            <div id="about-me" class="animated about-me">
+            <div id="about" class="animated about">
                 <header></header>
                 <article class="bio">
                     <div class="blurb">
@@ -154,8 +154,12 @@
             _gaq.push(['_trackEvent', this.id, 'clicked'])
         });
 
-        var registerToggle = function(wrap, toggleClass,hideClass,targetPanel){
+        var registerToggle = function(wrap, target){
+          var toggleClass = [".",target,'-toggle'].join("");
+          var hideClass =["hide",target].join("-");
+          var targetPanel ="#"+target;
 
+//toggleClass,hideClass,targetPanel
           $(toggleClass).click(function(e) {
               e.preventDefault();
 
@@ -184,8 +188,8 @@
           });
         };
 
-        registerToggle("#content-wrapper",".portfolio-toggle","hide-portfolio",'#portfolio-panel')
-        registerToggle("#content-wrapper",".about-toggle","hide-about-me",'#about-me')
+        registerToggle("#content-wrapper","portfolio")
+        registerToggle("#content-wrapper","about")
 
         // portfolio setup and config.
 

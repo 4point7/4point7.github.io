@@ -101,11 +101,12 @@ footer {
   width: 40%;
   max-width: 400px;
 }
-.about-me {
+
+#about {
   background-color: #58A6A2;
 }
 
-.hide-about-me .about-me,
+.hide-about .about,
 .hide-portfolio .portfolio {
   display: none;
 }
@@ -115,7 +116,7 @@ footer {
   /*display: none;*/
   opacity: 0.4;
 }
-.hide-about-me .id-button {
+.hide-about .id-button {
   opacity: 1;
 }
 
