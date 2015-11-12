@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- gh-pages -->
+<!-- development -->
 <html lang="en">
 
 <head>
@@ -25,6 +25,11 @@
 
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="simplegrid.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
+    <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"-->
 
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="msapplication-TileImage" content="assets/document/mstile-144x144.png">
@@ -47,6 +52,34 @@
         s.parentNode.insertBefore(ga, s);
     })();
     </script>
+
+    <script id="folio-list" type="text/x-handlebars-template">
+
+      <ul class="gridder">
+        {{#clients}}
+        <li class="gridder-list" data-griddercontent="#client-{{name}}">
+          <img src="assets/portfolio/{{name}}.png" class="img-responsive" />
+        </li>
+        {{/clients}}
+      </ul>
+      {{#clients}}
+      <div id="client-{{name}}" class="gridder-content">
+        <div class="grid grid-pad">
+          <div class="col-2-3">
+            {{#items}}
+            <img src="assets/portfolio/{{../name}}_{{this}}.png" class="img-responsive" />{{/items}}
+          </div>
+          <div class="col-1-3">
+            <h2>{{name}}</h2>
+            <h3>{{description}}</h3>
+            <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
+          </div>
+        </div>
+      </div>
+      {{/clients}}
+
+    </script>
+
 </head>
 
 <body>
@@ -56,7 +89,29 @@
     <article id="content-wrapper" class="main hide-about-me">
         <center>
             <img class="nametag block" src="assets/images/shona_logo.svg" alt="Shona Reed UX Researcher & Designer" />
-            <a id="portfolioOutbound" class="gaClick" href="http://cargocollective.com/shonareed"><img class="portfolio-link block" src="assets/images/button.svg" alt="view my portfolio" /></a>
+            <a id="portfolioButton" class="gaClick about-toggle" href="about"><img class="portfolio-link block" src="assets/images/button.svg" alt="view my portfolio" /></a>
+            <div class="img-icons">
+                <a class="outline-outward id-button about-toggle" href="about">
+                    <img src="assets/images/hi_res.png" alt="about me" />
+                </a>
+                <a id="linkedinOutbound" class="gaClick outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
+                    <img class="" src="assets/images/linkedin_icon.svg" alt="linkedin" />
+                </a>
+                <a id="twitterOutbound" class="gaClick outline-outward twitter" href="https://twitter.com/uxisready?refsrc=email">
+                    <img class="" src="assets/images/twitter_icon.svg" alt="twitter" />
+                </a>
+                <a id="emailOutbound" class="gaClick outline-outward email" href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
+                    <img class="" src="assets/images/email_icon.svg" alt="email ux@shonareed.com" />
+                </a>
+            </div>          <div id="portfolio-panel" class="animated about-me">
+                <header></header>
+                <article class="bio">
+                  <div id="content" class="container blur">
+                    <!--expand folio list template here...-->
+                  </div>
+                    <footer></footer>
+                </article>
+            </div>
             <div id="about-panel" class="animated about-me">
                 <header></header>
                 <article class="bio">
@@ -78,30 +133,20 @@
                     </footer>
                 </article>
             </div>
-            <div class="img-icons">
-                <a class="outline-outward id-button about-toggle" href="about">
-                    <img src="assets/images/hi_res.png" alt="about me" />
-                </a>
-                <a id="linkedinOutbound" class="gaClick outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
-                    <img class="" src="assets/images/linkedin_icon.svg" alt="linkedin" />
-                </a>
-                <a id="twitterOutbound" class="gaClick outline-outward twitter" href="https://twitter.com/uxisready?refsrc=email">
-                    <img class="" src="assets/images/twitter_icon.svg" alt="twitter" />
-                </a>
-                <a id="emailOutbound" class="gaClick outline-outward email" href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
-                    <img class="" src="assets/images/email_icon.svg" alt="email ux@shonareed.com" />
-                </a>
-            </div>
         </center>
     </article>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/gridder-min.js"></script>
+    <script src="js/handlebars-v4.0.4.js"></script>
+
     <script>
     var main = function() {
         "use strict";
 
         var HIDE_CLASS = "hide-about-me";
         var content = $("#content-wrapper");
-        var aboutPanel = $("#about-panel");
+        var aboutPanel = $("#about-me");
 
         content.addClass(HIDE_CLASS);
 
@@ -113,12 +158,106 @@
             _gaq.push(['_trackEvent', 'aboutMe', 'clicked'])
             if (content.hasClass(HIDE_CLASS)) { // show about_panel
                 content.removeClass(HIDE_CLASS);
-                aboutPanel.addClass('zoomIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                aboutPanel
+                .addClass('zoomIn')
+                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                     aboutPanel.removeClass('zoomIn');
                 });
+            } else {
+
+              aboutPanel.addClass('zoomOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                  aboutPanel.removeClass('zoomOut');
+              content.addClass(HIDE_CLASS);
+                          });
+
             }
             return false;
         });
+
+        // portfolio setup and config.
+
+        var context = {
+          clients: [{
+            "name": "uxisready",
+            "client": "Various",
+            "description": "ux consultancy,startups, lean ux",
+            "items": ["a", "b"]
+          }, {
+            "name": "photobooks",
+            "client": "Snapfish Photo Books",
+            "description": "e-commerce, personalized products",
+            "items": ["a", "b", "c", "d"]
+          }, {
+            "name": "prints",
+            "client": "Snapfish Photos Prints",
+            "description": "e-commerce, photo applications",
+            "items": ["a", "b", "c"]
+          }, {
+            "name": "checkout",
+            "client": "Snapfish Checkout",
+            "description": "e-commerce, worldwide, conversion",
+            "items": ["a", "b", "c"]
+          }, {
+            "name": "bluewolf",
+            "client": "Bluewolf",
+            "description": "crm solution, media and sales",
+            "items": ["a"]
+          }, {
+            "name": "aau",
+            "client": "Academy Of Art",
+            "description": "e-learning, university, educational applications",
+            "items": ["a"]
+          }, {
+            "name": "bofa",
+            "client": "Bank of America",
+            "description": "online banking, financial tools",
+            "items": ["a"]
+          }, {
+            "name": "sfmoma",
+            "client": "SF MoMA",
+            "description": "e-learning, museum, educational applications",
+            "items": ["a"]
+          }, {
+            "name": "filmoids",
+            "client": "self",
+            "description": "desktop video system",
+            "items": ["a"]
+          }]
+        };
+
+        var template = $("#folio-list").html();
+        var compiled_template = Handlebars.compile(template);
+        var html = compiled_template(context);
+
+        $("#content").html(html); // push templated document content
+
+        $(".markdown").each(function(index) {
+          $(this).load($(this).attr("content"));
+        });
+        // Call Gridder
+        $(".gridder").gridderExpander({
+          showNav: true,
+          //scrollOffset: 60,
+          scrollTo: "panel", // "panel" or "listitem"
+          animationSpeed: 740,
+          animationEasing: "easeInOutExpo",
+          onStart: function() {
+            console.log("Gridder Inititialized");
+          },
+          onContent: function(object) {
+            console.log("Gridder Content");
+          },
+          onExpanded: function(object) {
+            console.log("Gridder Expanded");
+            $(".carousel").carousel();
+          },
+          onChanged: function(object) {
+            console.log("Gridder Changed");
+          },
+          onClosed: function() {
+            console.log("Gridder Closed");
+          }
+        })
 
     };
 

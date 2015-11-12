@@ -1,5 +1,5 @@
 html {
-  background: url(http://www.shonareed.com/images/bg_bottom.png) top center repeat-x fixed, url(http://www.shonareed.com/images/bg_top.png) bottom center repeat fixed;
+  background: url(/assets/images/bg_bottom.png) top center repeat-x fixed, url(/assets/images/bg_top.png) bottom center repeat fixed;
   background-color: #333;
   min-width: 320px;
 }
@@ -7,8 +7,8 @@ body {
   font-family: "Noto Sans", sans;
   margin: 0;
   line-height: 1.6;
-  background-color: #58A6A2;
 }
+
 h1 {
   font-size: 4em;
   margin: 0;
