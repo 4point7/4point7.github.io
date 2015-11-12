@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shona Reed : User Experience (UX) Research</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
+  <link href="demo.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--style>
+      body {
+          background-color: #58A6A2;
+      }
+      ul {
+        background-color: white;
+      }
+      .gridder-list {
+        width: 31.83333%;
+      }
+  </style-->
+
+  <script id="folio-list" type="text/x-handlebars-template">
+
+    <ul class="gridder">
+      {{#clients}}
+      <li class="gridder-list" data-griddercontent="#client-{{name}}">
+        <img src="assets/portfolio/{{name}}.png" class="img-responsive" />
+      </li>
+      {{/clients}}
+    </ul>
+    {{#clients}}
+    <div id="client-{{name}}" class="gridder-content">
+      <div class="row">
+        <div class="col-sm-8">
+          {{#items}}
+          <img src="assets/portfolio/{{../name}}_{{this}}.png" class="img-responsive" />{{/items}}
+        </div>
+        <div class="col-sm-4">
+          <h2>{{name}}</h2>
+          <h3>{{description}}</h3>
+          <p class="markdown" content="assets/portfolio/{{name}}.md"></p>
+        </div>
+      </div>
+    </div>
+    {{/clients}}
+  </script>
+
+</head>
+
+<body>
+
+  <div id="content" class="container">
+    <!--expand folio list template here...-->
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="js/gridder-min.js"></script>
+  <script src="js/handlebars-v4.0.4.js"></script>
+
+  <script>
+    var context = {
+      clients: [{
+        "name": "uxisready",
+        "client": "Various",
+        "description": "ux consultancy,startups, lean ux",
+        "items": ["a", "b"]
+      }, {
+        "name": "photobooks",
+        "client": "Snapfish Photo Books",
+        "description": "e-commerce, personalized products",
+        "items": ["a", "b", "c", "d"]
+      }, {
+        "name": "prints",
+        "client": "Snapfish Photos Prints",
+        "description": "e-commerce, photo applications",
+        "items": ["a", "b", "c"]
+      }, {
+        "name": "checkout",
+        "client": "Snapfish Checkout",
+        "description": "e-commerce, worldwide, conversion",
+        "items": ["a", "b", "c", "d"]
+      }, {
+        "name": "bluewolf",
+        "client": "Bluewolf",
+        "description": "crm solution, media and sales",
+        "items": ["a"]
+      }, {
+        "name": "aau",
+        "client": "Academy Of Art",
+        "description": "e-learning, university, educational applications",
+        "items": ["a"]
+      }, {
+        "name": "bofa",
+        "client": "Bank of America",
+        "description": "online banking, financial tools",
+        "items": ["a"]
+      }, {
+        "name": "sfmoma",
+        "client": "SF MoMA",
+        "description": "e-learning, museum, educational applications",
+        "items": ["a"]
+      }, {
+        "name": "filmoids",
+        "client": "self",
+        "description": "desktop video system",
+        "items": ["a"]
+      }]
+    };
+
+    var template = $("#folio-list").html();
+    var compiled_template = Handlebars.compile(template);
+    var html = compiled_template(context);
+
+    jQuery(document).ready(function($) {
+      $("#content").html(html); // push templated document content
+
+      $(".markdown").each(function(index) {
+        $(this).load($(this).attr("content"));
+      });
+      // Call Gridder
+      $(".gridder").gridderExpander({
+        showNav: false,
+        //scrollOffset: 60,
+        scrollTo: "panel", // "panel" or "listitem"
+        animationSpeed: 740,
+        animationEasing: "easeInOutExpo",
+        onStart: function() {
+          console.log("Gridder Inititialized");
+        },
+        onContent: function(object) {
+          console.log("Gridder Content");
+        },
+        onExpanded: function(object) {
+          console.log("Gridder Expanded");
+          $(".carousel").carousel();
+        },
+        onChanged: function(object) {
+          console.log("Gridder Changed");
+        },
+        onClosed: function() {
+          console.log("Gridder Closed");
+        }
+      })
+    });
+  </script>
+
+</body>
+
+</html>
