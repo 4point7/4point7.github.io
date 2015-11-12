@@ -23,10 +23,10 @@
     <link rel="icon" type="image/png" href="assets/document/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/document/favicon-32x32.png" sizes="32x32">
 
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="demo.css">
-    <link rel="stylesheet" href="simplegrid.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/simplegrid.css">
 
     <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
     <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"-->
@@ -58,7 +58,15 @@
       <ul class="gridder">
         {{#clients}}
         <li class="gridder-list" data-griddercontent="#client-{{name}}">
-          <img src="assets/portfolio/{{name}}.png" class="img-responsive" />
+          <div>
+           <img src="assets/portfolio/{{name}}.png" class="img-responsive" />
+						<div class="overlay">
+							<span class="title">{{name}}</span><br>
+							<span class="description">{{description}}</span>
+						</div>
+					</div>
+
+
         </li>
         {{/clients}}
       </ul>
@@ -70,8 +78,6 @@
             <img src="assets/portfolio/{{../name}}_{{this}}.png" class="img-responsive" />{{/items}}
           </div>
           <div class="col-1-3">
-            <h2>{{name}}</h2>
-            <h3>{{description}}</h3>
             <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
           </div>
         </div>
@@ -86,10 +92,10 @@
     <header>
         <div id="header-vertical-space"></div>
     </header>
-    <article id="content-wrapper" class="main hide-about-me">
+    <article id="content-wrapper" class="main hide-about-me hide-portfolio">
         <center>
             <img class="nametag block" src="assets/images/shona_logo.svg" alt="Shona Reed UX Researcher & Designer" />
-            <a id="portfolioButton" class="gaClick about-toggle" href="about"><img class="portfolio-link block" src="assets/images/button.svg" alt="view my portfolio" /></a>
+            <a id="portfolioButton" class="gaClick portfolio-toggle" href="about"><img class="portfolio-link block" src="assets/images/button.svg" alt="view my portfolio" /></a>
             <div class="img-icons">
                 <a class="outline-outward id-button about-toggle" href="about">
                     <img src="assets/images/hi_res.png" alt="about me" />
@@ -103,7 +109,8 @@
                 <a id="emailOutbound" class="gaClick outline-outward email" href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
                     <img class="" src="assets/images/email_icon.svg" alt="email ux@shonareed.com" />
                 </a>
-            </div>          <div id="portfolio-panel" class="animated about-me">
+            </div>
+            <div id="portfolio-panel" class="animated portfolio">
                 <header></header>
                 <article class="bio">
                   <div id="content" class="container blur">
@@ -112,11 +119,11 @@
                     <footer></footer>
                 </article>
             </div>
-            <div id="about-panel" class="animated about-me">
+            <div id="about-me" class="animated about-me">
                 <header></header>
                 <article class="bio">
                     <div class="blurb">
-                        <img class="id-badge" src="assets/images/hi_res.png" />
+                        <img class="id-badge about-toggle" src="assets/images/hi_res.png" />
                         <p>
                             I am a lead <span>UX Researcher & Designer</span> with over <span>ten years experience</span> leading UX and service design projects across multiple channels. I have aided many companies, from <span>start&#8209;ups </span>to<span> Fortune 500 companies</span> to launch successful products.
                         </p>
@@ -144,35 +151,42 @@
     var main = function() {
         "use strict";
 
-        var HIDE_CLASS = "hide-about-me";
-        var content = $("#content-wrapper");
-        var aboutPanel = $("#about-me");
-
-        content.addClass(HIDE_CLASS);
-
         $(".gaClick").click(function() {
             _gaq.push(['_trackEvent', this.id, 'clicked'])
         });
 
-        $(".about-toggle").click(function() {
-            _gaq.push(['_trackEvent', 'aboutMe', 'clicked'])
-            if (content.hasClass(HIDE_CLASS)) { // show about_panel
-                content.removeClass(HIDE_CLASS);
-                aboutPanel
-                .addClass('zoomIn')
-                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                    aboutPanel.removeClass('zoomIn');
+        var registerToggle = function(wrap, toggleClass,hideClass,targetPanel){
+
+          $(toggleClass).click(function(e) {
+              e.preventDefault();
+
+              var wrapper = $(wrap);
+
+              if (wrapper.hasClass(hideClass)) {
+                _gaq.push(['_trackEvent', toggleClass, 'clicked'])
+                wrapper.removeClass(hideClass);
+                $(targetPanel)
+                  .addClass('zoomIn')
+                  .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                      $(targetPanel).removeClass('zoomIn');
+                  });
+
+              } else {
+                $(targetPanel)
+                   .addClass('zoomOut')
+                   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                      $(targetPanel).removeClass('zoomOut');
+                      wrapper.addClass(hideClass);
                 });
-            } else {
 
-              aboutPanel.addClass('zoomOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                  aboutPanel.removeClass('zoomOut');
-              content.addClass(HIDE_CLASS);
-                          });
+              }
 
-            }
-            return false;
-        });
+              return false;
+          });
+        };
+
+        registerToggle("#content-wrapper",".portfolio-toggle","hide-portfolio",'#portfolio-panel')
+        registerToggle("#content-wrapper",".about-toggle","hide-about-me",'#about-me')
 
         // portfolio setup and config.
 
@@ -217,23 +231,23 @@
             "client": "SF MoMA",
             "description": "e-learning, museum, educational applications",
             "items": ["a"]
-          }, {
+          }/*, {
             "name": "filmoids",
             "client": "self",
             "description": "desktop video system",
             "items": ["a"]
-          }]
-        };
+          }*/
+        ]};
 
         var template = $("#folio-list").html();
         var compiled_template = Handlebars.compile(template);
-        var html = compiled_template(context);
 
-        $("#content").html(html); // push templated document content
+        $("#content").html(compiled_template(context)); // push templated document content
 
-        $(".markdown").each(function(index) {
-          $(this).load($(this).attr("content"));
-        });
+       $(".markdown").each(function(index) {
+         $(this).load($(this).attr("content"));
+       });
+
         // Call Gridder
         $(".gridder").gridderExpander({
           showNav: true,

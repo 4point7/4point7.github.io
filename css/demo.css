@@ -1,5 +1,5 @@
 body {
-  rpadding-bottom: 33%;
+  padding-bottom: 1080px;
 }
 h2 {
 
@@ -15,7 +15,7 @@ h2 {
 
 .gridder {
   margin: 0px;
-  padding: 0px;
+  padding: 75px;
   list-style-type: none;
   background-color: white;
 }

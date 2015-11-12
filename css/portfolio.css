@@ -104,18 +104,43 @@ footer {
 .about-me {
   background-color: #58A6A2;
 }
-.hide-about-me .about-me {
+
+.hide-about-me .about-me,
+.hide-portfolio .portfolio {
   display: none;
 }
+
 .id-button {
-  display: none;
+  display: inline-block;
+  /*display: none;*/
+  opacity: 0.4;
 }
 .hide-about-me .id-button {
-  display: inline-block;
+  opacity: 1;
 }
+
 .portfolio-link {
   width: 33%;
   max-width: 350px;
   min-width: 180px;
   margin-bottom: 2em;
+  opacity: 0.5;
+}
+.hide-portfolio .portfolio-link {
+    opacity: 1;
+}
+.overlay {
+  color: #58A6A2;
+  padding: 2%;
+}
+
+span.title {
+  font-size: 16pt;
+  font-weight: 900;
+   text-transform: uppercase;
+}
+span.descripton {
+  font-size: 12pt;
+  font-weight: 600;
+  text-transform: capitalize;
 }
