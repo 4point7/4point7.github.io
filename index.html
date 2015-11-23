@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" href="assets/document/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/document/favicon-32x32.png" sizes="32x32">
 
-    <link rel="stylesheet" href="css/animate.css">
+    <!--link rel="stylesheet" href="css/animate.css"-->
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/simplegrid.css">
@@ -94,6 +94,17 @@
 
     </script>
 
+    <script id="client-list" type="text/x-handlebars-template">
+      <ul class="gridder">
+      {{#uxclients}}
+      <li class="gridder-list" data-griddercontent="#client-list-{{name}}">
+        <div>
+          <img src="assets/images/logo_{{name}}.png" class="" />
+        </div>
+      </li>
+      {{/uxclients}}
+    </ul>
+    </script>
 </head>
 
 <body>
@@ -103,28 +114,16 @@
     <article id="content-wrapper" class="main hide-about hide-portfolio">
         <center>
             <img class="nametag block" src="assets/images/shona_logo.svg" alt="Shona Reed UX Researcher & Designer" />
-            <!--a id="portfolioButton" class="gaClick portfolio-toggle" href="about"><img class="portfolio-link block" src="assets/images/button.svg" alt="view my portfolio" /></a-->
             <div id="about" class="animated about">
                 <header></header>
                 <article class="bio">
                     <div class="blurb">
-                        <img class="id-badge about-toggle" src="assets/images/hi_res.png" />
                         <p>
                             I am a lead <span>UX Researcher & Designer</span> with over <span>ten years experience</span> leading UX and service design projects across multiple channels. I have aided many companies, from <span>start&#8209;ups </span>to<span> Fortune 500 companies</span> to launch successful products.
                         </p>
                         <p>My approach balances <span>qualitative and quantitative research methods</span> with creative flair and a <span>genuine passion</span> for creating products people are excited to use.
                         </p>
-                        <h2>contact</h2>
-                        <p>
-                            I was born in Scotland, grew up in California and currently live between <span>Barcelona</span>, <span>San Francisco</span> and <span>London</span>, although I enjoy travelling for work and fun.
-                        </p>
-                        <h2>clients</h2>
-                        <p>
-                            My clients include Hewlett Packard, Snapfish by HP, Bank of America, Publicis Worldwide, Bluewolf Marketing, San Francisco Chronicle, Salesforce, MTV and various <span>San Francisco</span> and Barcelona start&#8209;ups.
-                        </p>
                     </div>
-                    <footer>Contact me to discuss your next project.
-                    </footer>
                 </article>
             </div>
             <div id="portfolio" class="animated portfolio">
@@ -136,75 +135,46 @@
                     <footer></footer>
                 </article>
             </div>
-            <div class="img-icons">
-                <a class="outline-outward id-button about-toggle" href="about">
-                    <img src="assets/images/hi_res.png" alt="about me" />
-                </a>
-                <a id="linkedinOutbound" class="gaClick outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
-                    <img class="" src="assets/images/linkedin_icon.svg" alt="linkedin" />
-                </a>
-                <a id="twitterOutbound" class="gaClick outline-outward twitter" href="https://twitter.com/uxisready?refsrc=email">
-                    <img class="" src="assets/images/twitter_icon.svg" alt="twitter" />
-                </a>
-                <a id="emailOutbound" class="gaClick outline-outward email" href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
-                    <img class="" src="assets/images/email_icon.svg" alt="email ux@shonareed.com" />
-                </a>
+            <div id="about" class="clients">
+                <header></header>
+                <article class="bio">
+                    <div id="client-display" class="blurb">
+                    </div>
+                    <footer></footer>
+                </article>
             </div>
+            <div id="about" class="contact">
+                <header></header>
+                <article class="bio">
+                  <div class="blurb">
+                    <div class="col-4-12">
+                      <img class="id-badge " src="assets/images/hi_res.png" />
+                    </div>
+                    <div class="col-8-12">
+                      <p>I was born in Scotland, grew up in California and currently live between <span>Barcelona</span>, <span>San Francisco</span> and <span>London</span>, although I enjoy travelling for work and fun.</p>
+                      <h2>Contact me to discuss your next project.</>
+                    </div>
+                  </div>
+             </article>
+            </div>
+
           </center>
     </article>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/gridder-min.js"></script>
     <script src="js/handlebars-v4.0.4.js"></script>
     <script src="js/slick.min.js"></script>
 
     <script>
     var main = function() {
+
         "use strict";
 
         $(".gaClick").click(function() {
             _gaq.push(['_trackEvent', this.id, 'clicked'])
         });
 
-        var registerToggle = function(wrap, target){
-
-          var toggleClass = [".",target,'-toggle'].join("");
-          var hideClass =["hide",target].join("-");
-          var targetPanel ="#"+target;
-
-          $(toggleClass).click(function(e) {
-              e.preventDefault();
-
-              var wrapper = $(wrap);
-
-              if (wrapper.hasClass(hideClass)) {
-                _gaq.push(['_trackEvent', toggleClass, 'clicked'])
-                wrapper.removeClass(hideClass);
-                $(targetPanel)
-                  .addClass('zoomIn')
-                  .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                      $(targetPanel).removeClass('zoomIn');
-                  });
-
-              } else {
-                $(targetPanel)
-                   .addClass('zoomOut')
-                   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                      $(targetPanel).removeClass('zoomOut');
-                      wrapper.addClass(hideClass);
-                });
-
-              }
-
-              return false;
-          });
-        };
-
-    //    registerToggle("#content-wrapper","portfolio")
-    //    registerToggle("#content-wrapper","about")
-
         // portfolio setup and config.
-
         var context = {
           clients: [{
             "name": "uxisready",
@@ -251,42 +221,53 @@
             "client": "self",
             "description": "desktop video system",
             "items": ["a"]
-          }
-        ]};
+          }],
+          uxclients: [
+            {"name": "dinube"},
+            {"name": "atom"},
+            {"name": "bofa"},
+            {"name": "hp"},
+            {"name": "publicis"},
+            {"name": "radaptive"},
+            {"name": "snap"},
+            {"name": "chron"}
+          ]
+        };
 
-        var template = $("#folio-list").html();
-        var compiled_template = Handlebars.compile(template);
+        var folio = $("#folio-list").html();
+        $("#content").html(Handlebars.compile(folio)(context)); // push templated document content
 
-        $("#content").html(compiled_template(context)); // push templated document content
+        var clients = $("#client-list").html();
+        $("#client-display").html(Handlebars.compile(clients)(context)); // push templated document content
 
        $(".markdown").each(function(index) {
          $(this).load($(this).attr("content")); // could be parsed on load...
        });
 
-        // Call Gridder
-        $(".gridder").gridderExpander({
-          showNav: true,
-          //scrollOffset: 60,
-          scrollTo: "listitem", // "panel" or "listitem"
-          animationSpeed: 740,
-          animationEasing: "easeInOutExpo",
-          onStart: function() {
-            console.log("Gridder Inititialized");
-            $(".carousel").slick({
-              arrows:true,
-              variableWidth:true,
-              dots: true
-            });
-          },
-          onContent: function(object) {
-            console.log("Gridder Content", object);
-          },
-
-          onExpanded: function(object) { },
-          onChanged: function(object) { },
-          onClosed: function() { }
-
-        })
+        // // Call Gridder
+        // $(".gridder").gridderExpander({
+        //   showNav: true,
+        //   //scrollOffset: 60,
+        //   scrollTo: "listitem", // "panel" or "listitem"
+        //   animationSpeed: 740,
+        //   animationEasing: "easeInOutExpo",
+        //   onStart: function() {
+        //     console.log("Gridder Inititialized");
+        //     $(".carousel").slick({
+        //       arrows:true,
+        //       variableWidth:true,
+        //       dots: true
+        //     });
+        //   },
+        //   onContent: function(object) {
+        //     console.log("Gridder Content", object);
+        //   },
+        //
+        //   onExpanded: function(object) { },
+        //   onChanged: function(object) { },
+        //   onClosed: function() { }
+        //
+        // })
 
     };
 

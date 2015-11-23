@@ -35,8 +35,8 @@ article.main header {
 }
 article.bio .id-badge {
   float: left;
-  margin: -15em -4%;
-  width: 25%;
+  xmargin: -15em -4%;
+  xwidth: 25%;
   max-width: 250px;
 }
 article.bio .blurb {
@@ -122,4 +122,7 @@ span.descripton {
   font-size: 12pt;
   font-weight: 600;
   text-transform: capitalize;
+}
+p {
+    font-size:1.5em;
 }
