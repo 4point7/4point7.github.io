@@ -1,5 +1,5 @@
 body {
-  padding-bottom: 1080px;
+  padding-bottom: 100%;
 }
 
 #content div.gridder-expanded-content{
@@ -29,7 +29,7 @@ body {
   background: url("assets/images/loading.svg") no-repeat center
 }
 .gridder-show.loading {
-  background: #EEE url("assets/images/loading.svg") no-repeat center
+  background: #58A6A2 url("assets/images/loading.svg") no-repeat center
 }
 .gridder-content {
   display: none

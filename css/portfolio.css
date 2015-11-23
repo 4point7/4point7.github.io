@@ -97,6 +97,7 @@ footer {
   -webkit-filter: blur(5px);
   filter: blur(5px);
 }
+
 .nametag {
   width: 40%;
   max-width: 400px;
@@ -104,32 +105,9 @@ footer {
 
 #about {
   background-color: #58A6A2;
+  width:100%;
 }
 
-.hide-about .about,
-.hide-portfolio .portfolio {
-  display: none;
-}
-
-.id-button {
-  display: inline-block;
-  /*display: none;*/
-  opacity: 0.4;
-}
-.hide-about .id-button {
-  opacity: 1;
-}
-
-.portfolio-link {
-  width: 33%;
-  max-width: 350px;
-  min-width: 180px;
-  margin-bottom: 2em;
-  opacity: 0.5;
-}
-.hide-portfolio .portfolio-link {
-    opacity: 1;
-}
 .overlay {
   color: #58A6A2;
   padding: 2%;

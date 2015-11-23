@@ -1,6 +1,8 @@
 Filmoids
-Role: Conceptual Design / Interface Design
-Client: Personal Project
+--------
+
+#### Role: Conceptual Design / Interface Design ####
+###### Client: Personal Project ######
 
 Filmoids is a desktop video system; which has been developed for the Macintosh. It maps digital film clips to a psuedo genome and then 'breeds' them together to create offspring.
 
