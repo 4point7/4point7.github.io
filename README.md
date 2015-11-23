@@ -1,6 +1,6 @@
 shonareed.com
 =============
 
-domain files for 
+domain files for
 
 www.shonareed.com

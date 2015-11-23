@@ -121,34 +121,38 @@
                         <p>
                             I am a lead <span>UX Researcher & Designer</span> with over <span>ten years experience</span> leading UX and service design projects across multiple channels. I have aided many companies, from <span>start&#8209;ups </span>to<span> Fortune 500 companies</span> to launch successful products.
                         </p>
-                        <p>My approach balances <span>qualitative and quantitative research methods</span> with creative flair and a <span>genuine passion</span> for creating products people are excited to use.
-                        </p>
                     </div>
                 </article>
             </div>
+
             <div id="portfolio" class="animated portfolio">
-                <header></header>
                 <article class="bio">
                   <div id="content" class="container blur">
                     <!--expand folio list template here...-->
                   </div>
-                    <footer></footer>
                 </article>
             </div>
+
             <div id="about" class="clients">
-                <header></header>
                 <article class="bio">
-                    <div id="client-display" class="blurb">
-                    </div>
-                    <footer></footer>
+                  <div class="blurb">
+                    <p>My approach balances <span>qualitative and quantitative research methods</span> with creative flair and a <span>genuine passion</span> for creating products people are excited to use.
+                    </p>
+                    <p>
+                      My clients include Hewlett Packard, Snapfish by HP, Bank of America, Publicis Worldwide, Bluewolf Marketing, San Francisco Chronicle, Salesforce, MTV and various <span>San Francisco</span> and Barcelona start&#8209;ups.
+                    </p>
+                    <div id="client-display"></div>
+                  </div>
+
                 </article>
             </div>
+
             <div id="about" class="contact">
                 <header></header>
                 <article class="bio">
-                  <div class="blurb">
+                  <div class="row blurb">
                     <div class="col-4-12">
-                      <img class="id-badge " src="assets/images/hi_res.png" />
+                      <img src="assets/images/hi_res.png" />
                     </div>
                     <div class="col-8-12">
                       <p>I was born in Scotland, grew up in California and currently live between <span>Barcelona</span>, <span>San Francisco</span> and <span>London</span>, although I enjoy travelling for work and fun.</p>
@@ -243,31 +247,6 @@
        $(".markdown").each(function(index) {
          $(this).load($(this).attr("content")); // could be parsed on load...
        });
-
-        // // Call Gridder
-        // $(".gridder").gridderExpander({
-        //   showNav: true,
-        //   //scrollOffset: 60,
-        //   scrollTo: "listitem", // "panel" or "listitem"
-        //   animationSpeed: 740,
-        //   animationEasing: "easeInOutExpo",
-        //   onStart: function() {
-        //     console.log("Gridder Inititialized");
-        //     $(".carousel").slick({
-        //       arrows:true,
-        //       variableWidth:true,
-        //       dots: true
-        //     });
-        //   },
-        //   onContent: function(object) {
-        //     console.log("Gridder Content", object);
-        //   },
-        //
-        //   onExpanded: function(object) { },
-        //   onChanged: function(object) { },
-        //   onClosed: function() { }
-        //
-        // })
 
     };
 
