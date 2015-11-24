@@ -1,8 +1,7 @@
-Bank of America
----------------
+![Bank of America](/assets/images/logo_bofa.png)
 
-#### Role: Interaction Designer / UX Lead ####
-###### Client: Bank of America ######
+### Role: Interaction Designer / UX Lead ###
+#### Client: Bank of America ####
 
 Designed process flows, navigational systems, information architectures, and detailed page specifications for financial applications and sales websites.
 

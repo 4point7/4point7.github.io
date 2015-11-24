@@ -1,8 +1,7 @@
-UX is Ready
------------
+![UX is Ready](/assets/images/logo_uxisready.png)
 
-#### Role: UX Consultant / Co-Founder ####
-###### Client: Various ######
+### Role: UX Consultant / Founder ###
+#### Client: Various ####
 
 *UX is Ready* is a research & design consultancy based in Barcelona, working with clients both locally and Internationally.
 
