@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/simplegrid.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slider.css">
 
     <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
     <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"-->
@@ -76,15 +77,19 @@
           <div class="col-1-12">&nbsp;</div>
           <div class="col-10-12">
             <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
-            <div id="carousel-{{name}}" class="carousel slick">
+
+            <div id="carousel-{{name}}">
+              <div id="slider_{{name}}">
+            		<a class="buttons prev" href="#">&#60;</a>
+            		<div class="viewport">
+            			<ul class="overview">
               {{#items}}
-              <div class="carousel-inner" role="listbox">
-                <div class="item">
-                  <img src="assets/portfolio/{{../name}}_{{this}}.png" class="img-responsive" />
-                  <div class="carousel-caption">{{../description}}</div>
-                </div>
-              </div>
+                  <li><img src="assets/portfolio/{{../name}}_{{this}}.png" /></li>
               {{/items}}
+            			</ul>
+            		</div>
+            		<a class="buttons next" href="#">&#62;</a>
+            	</div>
             </div>
           </div>
           <div class="col-1-12">&nbsp;</div>
@@ -163,7 +168,7 @@
     <!--script src="js/slick.min.js"></script-->
     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.10/jquery.popupoverlay.js"></script>
 
-    <script src="jquery.tinycarousel.js"></script>
+    <script src="js/jquery.tinycarousel.min.js"></script>
 
 
     <script>
@@ -243,11 +248,11 @@
       });
 
       $(".close_button").click(function(){
-        console.log('cickety click');
         var target = $(this).attr("data-griddercontent");
         $(target).popup("hide");
       });
 
+      $("[id*=carousel-]").tinycarousel({ });
     };
 
     $(main);
