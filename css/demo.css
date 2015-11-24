@@ -32,7 +32,10 @@ body {
   background: #58A6A2 url("assets/images/loading.svg") no-repeat center
 }
 .gridder-content {
-  display: none
+  display: none;
+  background-color: #fff;
+  border: 15px #58A6A2 solid;
+  padding: 3%;
 }
 .gridder-list:nth-child(n) {
   margin-bottom: 1%;

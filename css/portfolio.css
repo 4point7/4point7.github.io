@@ -135,3 +135,22 @@ p {
 #about.clients {
   background-color:white;
 }
+
+.popup_visible .gridder-content {
+  transform: scale(1);
+}
+
+.gridder-content {
+  transform: scale(0.2);
+  width:85%;
+  background-color: #58A6A2;
+}
+
+.gridder-content p {
+  font-size: 1em
+}
+
+.close_button {
+  width: 60px;
+  float: right;
+}
