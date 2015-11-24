@@ -73,7 +73,7 @@
       </ul>
       {{#clients}}
       <div id="client-{{name}}" class="gridder-content">
-          <div class="col-1-12"></div>
+          <div class="col-1-12">&nbsp;</div>
           <div class="col-10-12">
             <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
             <div id="carousel-{{name}}" class="carousel slick">
@@ -87,24 +87,14 @@
               {{/items}}
             </div>
           </div>
-          <div class="col-1-12"></div>
+          <div class="col-1-12">&nbsp;</div>
+          <img src="assets/images/close.svg" class="close_button" data-griddercontent="#client-{{name}}"/>
         </div>
       </div>
       {{/clients}}
 
     </script>
 
-    <script id="client-list" type="text/x-handlebars-template">
-      <ul class="gridder">
-      {{#uxclients}}
-      <li class="gridder-list" data-griddercontent="#client-list-{{name}}">
-        <div>
-          <img src="assets/images/logo_{{name}}.png" class="" />
-        </div>
-      </li>
-      {{/uxclients}}
-    </ul>
-    </script>
 </head>
 
 <body>
@@ -153,17 +143,6 @@
                 </article>
             </div>
 
-            <div id="about" class="clients">
-                <article class="bio">
-                  <div class="blurb">
-                    <!--p>
-                      My clients include Hewlett Packard, Snapfish by HP, Bank of America, Publicis Worldwide, Bluewolf Marketing, San Francisco Chronicle, Salesforce, MTV and various <span>San Francisco</span> and Barcelona start&#8209;ups.
-                    </p-->
-                    <div id="client-display"></div>
-                  </div>
-                </article>
-            </div>
-
             <div class="img-icons">
                 <a id="linkedinOutbound" class="gaClick outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
                     <img class="" src="assets/images/linkedin_icon.svg" alt="linkedin" />
@@ -181,86 +160,93 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/handlebars-v4.0.4.js"></script>
-    <script src="js/slick.min.js"></script>
+    <!--script src="js/slick.min.js"></script-->
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.10/jquery.popupoverlay.js"></script>
+
+    <script src="jquery.tinycarousel.js"></script>
+
 
     <script>
     var main = function() {
+    "use strict";
 
-        "use strict";
+      $(".gaClick").click(function() {
+        _gaq.push(['_trackEvent', this.id, 'clicked'])
+      });
 
-        $(".gaClick").click(function() {
-            _gaq.push(['_trackEvent', this.id, 'clicked'])
-        });
+      // portfolio setup and config.
+      var context = {
+        clients: [{
+          "name": "uxisready",
+          "client": "UX is ready",
+          "description": "ux consultancy, research, lean ux, agile",
+          "items": ["a", "b"]
+        }, {
+          "name": "photobooks",
+          "client": "Snapfish Photo Books",
+          "description": "e-commerce, personalized products",
+          "items": ["a", "b", "c", "d"]
+        }, {
+          "name": "prints",
+          "client": "Snapfish Photos Prints",
+          "description": "e-commerce, photo applications",
+          "items": ["a", "b", "c"]
+        }, {
+          "name": "checkout",
+          "client": "Snapfish Checkout",
+          "description": "e-commerce, worldwide, conversion",
+          "items": ["a", "b", "c"]
+        }, {
+          "name": "bluewolf",
+          "client": "Bluewolf",
+          "description": "crm solution, media and sales",
+          "items": ["a"]
+        }, {
+          "name": "academyofart",
+          "client": "Academy Of Art",
+          "description": "e-learning, university, educational applications",
+          "items": ["a"]
+        }, {
+          "name": "bofa",
+          "client": "Bank of America",
+          "description": "online banking, financial tools",
+          "items": ["a"]
+        }, {
+          "name": "sfmoma",
+          "client": "SF MoMA",
+          "description": "e-learning, museum, educational applications",
+          "items": ["a"]
+        }, {
+          "name": "filmoids",
+          "client": "self",
+          "description": "desktop video system",
+          "items": ["a"]
+        }]
+      };
 
-        // portfolio setup and config.
-        var context = {
-          clients: [{
-            "name": "uxisready",
-            "client": "UX is ready",
-            "description": "ux consultancy, research, lean ux, agile",
-            "items": ["a", "b"]
-          }, {
-            "name": "photobooks",
-            "client": "Snapfish Photo Books",
-            "description": "e-commerce, personalized products",
-            "items": ["a", "b", "c", "d"]
-          }, {
-            "name": "prints",
-            "client": "Snapfish Photos Prints",
-            "description": "e-commerce, photo applications",
-            "items": ["a", "b", "c"]
-          }, {
-            "name": "checkout",
-            "client": "Snapfish Checkout",
-            "description": "e-commerce, worldwide, conversion",
-            "items": ["a", "b", "c"]
-          }, {
-            "name": "bluewolf",
-            "client": "Bluewolf",
-            "description": "crm solution, media and sales",
-            "items": ["a"]
-          }, {
-            "name": "academyofart",
-            "client": "Academy Of Art",
-            "description": "e-learning, university, educational applications",
-            "items": ["a"]
-          }, {
-            "name": "bofa",
-            "client": "Bank of America",
-            "description": "online banking, financial tools",
-            "items": ["a"]
-          }, {
-            "name": "sfmoma",
-            "client": "SF MoMA",
-            "description": "e-learning, museum, educational applications",
-            "items": ["a"]
-          }, {
-            "name": "filmoids",
-            "client": "self",
-            "description": "desktop video system",
-            "items": ["a"]
-          }],
-          uxclients: [
-            {"name": "dinube"},
-            {"name": "atom"},
-            {"name": "bofa"},
-            {"name": "hp"},
-            {"name": "publicis"},
-            {"name": "radaptive"},
-            {"name": "snap"},
-            {"name": "chron"}
-          ]
-        };
+      var folio = $("#folio-list").html();
+      $("#content").html(Handlebars.compile(folio)(context)); // push templated document content
 
-        var folio = $("#folio-list").html();
-        $("#content").html(Handlebars.compile(folio)(context)); // push templated document content
+      $(".markdown").each(function(index) {
+       $(this).load($(this).attr("content")); // could be parsed on load...
+      });
 
-        var clients = $("#client-list").html();
-        $("#client-display").html(Handlebars.compile(clients)(context)); // push templated document content
+      $('gridder-content').popup({
+        transition: 'all 0.6s',
+        opacity:1,
+        scrolllock:true,
+      });
 
-       $(".markdown").each(function(index) {
-         $(this).load($(this).attr("content")); // could be parsed on load...
-       });
+      $("li.gridder-list").click(function(){
+        var target = $(this).attr("data-griddercontent");
+        $(target).popup("show");
+      });
+
+      $(".close_button").click(function(){
+        console.log('cickety click');
+        var target = $(this).attr("data-griddercontent");
+        $(target).popup("hide");
+      });
 
     };
 

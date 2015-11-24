@@ -1,4 +1,4 @@
-md2html aau.md > aau.html
+md2html academyofart.md > academyofart.html
 md2html bluewolf.md > bluewolf.html
 md2html bofa.md > bofa.html
 md2html checkout.md > checkout.html
