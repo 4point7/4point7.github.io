@@ -152,12 +152,12 @@ p {
 }
 
 .close_button {
-  width: 60px;
+  width: 30px;
   float: right;
 }
 
  div[id*=carousel-] img {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   padding:0px 12.5%;
   display:block;

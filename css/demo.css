@@ -34,7 +34,8 @@ body {
 .gridder-content {
   display: none;
   background-color: #fff;
-  border: 15px #58A6A2 solid;
+  border: 25px #58A6A2 solid;
+  border-radius:40px;
   padding: 3%;
 }
 .gridder-list:nth-child(n) {

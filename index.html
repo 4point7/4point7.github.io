@@ -25,7 +25,7 @@
 
     <!--link rel="stylesheet" href="css/animate.css"-->
     <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/demo.css">
+￼    <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/simplegrid.css">
 
     <link rel="stylesheet" href="css/sss.css" type="text/css" media="all">
@@ -74,13 +74,13 @@
       </ul>
       {{#clients}}
       <div id="client-{{name}}" class="gridder-content">
-            <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
-            <div id="carousel-{{name}}" class="slider">
-              {{#items}}
-                  <img src="assets/portfolio/{{../name}}_{{this}}.png" />
-              {{/items}}
-            </div>
           <img src="assets/images/close.svg" class="close_button" data-griddercontent="#client-{{name}}"/>
+          <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
+          <div id="carousel-{{name}}" class="slider">
+            {{#items}}
+                <img src="assets/portfolio/{{../name}}_{{this}}.png" />
+            {{/items}}
+          </div>
         </div>
       </div>
       {{/clients}}
