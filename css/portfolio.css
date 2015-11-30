@@ -125,6 +125,7 @@ p {
     font-size:1.5em;
     margin-bottom: 2%;
 }
+
 #client-display {
     background-color: #58A6A2;
 }
@@ -153,4 +154,11 @@ p {
 .close_button {
   width: 60px;
   float: right;
+}
+
+ div[id*=carousel-] img {
+  width: 75%;
+  margin: 0 auto;
+  padding:0px 12.5%;
+  display:block;
 }

@@ -27,9 +27,9 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/simplegrid.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slider.css">
+
+    <link rel="stylesheet" href="css/sss.css" type="text/css" media="all">
+
 
     <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
     <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"-->
@@ -74,25 +74,12 @@
       </ul>
       {{#clients}}
       <div id="client-{{name}}" class="gridder-content">
-          <div class="col-1-12">&nbsp;</div>
-          <div class="col-10-12">
             <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
-
-            <div id="carousel-{{name}}">
-              <div id="slider_{{name}}">
-            		<a class="buttons prev" href="#">&#60;</a>
-            		<div class="viewport">
-            			<ul class="overview">
+            <div id="carousel-{{name}}" class="slider">
               {{#items}}
-                  <li><img src="assets/portfolio/{{../name}}_{{this}}.png" /></li>
+                  <img src="assets/portfolio/{{../name}}_{{this}}.png" />
               {{/items}}
-            			</ul>
-            		</div>
-            		<a class="buttons next" href="#">&#62;</a>
-            	</div>
             </div>
-          </div>
-          <div class="col-1-12">&nbsp;</div>
           <img src="assets/images/close.svg" class="close_button" data-griddercontent="#client-{{name}}"/>
         </div>
       </div>
@@ -165,11 +152,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/handlebars-v4.0.4.js"></script>
-    <!--script src="js/slick.min.js"></script-->
+    <script src="js/sss.js"></script>
     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.10/jquery.popupoverlay.js"></script>
-
-    <script src="js/jquery.tinycarousel.min.js"></script>
-
 
     <script>
     var main = function() {
@@ -252,7 +236,14 @@
         $(target).popup("hide");
       });
 
-      $("[id*=carousel-]").tinycarousel({ });
+      $('.slider').sss({
+         slideShow : true, // Set to false to prevent SSS from automatically animating.
+         startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
+         transition : 500, // Length (in milliseconds) of the fade transition.
+         speed : 2550, // Slideshow speed in milliseconds.
+        // showNav : true // Set to false to hide navigation arrows.
+      });
+
     };
 
     $(main);
