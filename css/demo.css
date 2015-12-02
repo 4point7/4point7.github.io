@@ -55,7 +55,8 @@ body {
   opacity: .5
 }
 .gridder-list {
-  cursor: pointer
+  cursor: pointer;
+  padding:2.5%;
 }
 .gridder-list:hover {
   opacity: 0.8

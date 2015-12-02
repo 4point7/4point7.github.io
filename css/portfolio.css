@@ -41,7 +41,7 @@ article.bio .blurb {
   text-align: justify;
   padding: 2% 10% 7% 10%;
   color: #333;
-  max-width: 1400px;
+  xmax-width: 1400px;
   color: rgba(200, 200, 200, 0.65);
 }
 article.bio .blurb P SPAN {
@@ -159,6 +159,6 @@ p {
  div[id*=carousel-] img {
   width: 100%;
   margin: 0 auto;
-  padding:0px 12.5%;
+  padding:0px 2.5%;
   display:block;
 }

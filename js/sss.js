@@ -85,8 +85,10 @@
       }
 
       next = slider.find('.sssnext'),
-        prev = slider.find('.sssprev');
+      prev = slider.find('.sssprev');
 
+      next_slide();
+      
       $(window).load(function() {
 
         slider.css({
@@ -110,8 +112,7 @@
         });
 
       });
-      next_slide();
-      // End
+
 
     });
 
