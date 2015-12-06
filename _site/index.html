@@ -1,249 +1,200 @@
 <!DOCTYPE html>
-<!-- 4point7:jekyll -->
-<html lang="en">
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shona Reed</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <meta name="author" content="Reed Shona">
+    <link rel="canonical" href="https://shonareed.com/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
-<head>
-    <title>Shona Reed : User Experience (UX) Research</title>
-    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
-    <meta name="description" content="UX Researcher & Designer, ten years experience, startups to Fortune 500, qualitative and quantitative research, genuine passion, Barcelona, London, San Francisco">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/document/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/document/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/document/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/document/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/document/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/document/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/document/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/document/apple-touch-icon-152x152.png">
+    <!-- Google verification -->
+    
 
-    <link rel="icon" type="image/png" href="assets/document/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="assets/document/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="assets/document/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/document/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/document/favicon-32x32.png" sizes="32x32">
+    <!-- Bing Verification -->
+    
 
-    <!--link rel="stylesheet" href="css/animate.css"-->
-    <link rel="stylesheet" href="css/portfolio.css">
-￼    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/simplegrid.css">
-    <link rel="stylesheet" href="css/sss.css" type="text/css" media="all">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
-
-    <meta name="msapplication-TileColor" content="#b91d47">
-    <meta name="msapplication-TileImage" content="assets/document/mstile-144x144.png">
-    <meta name="msapplication-config" content="assets/images/browserconfig.xml">
-
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-58738328-1']);
-    _gaq.push(['_setDomainName', 'www.shonareed.com']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-
-    <script id="folio-list" type="text/x-handlebars-template">
-
-      <ul class="gridder">
-        {{#clients}}
-        <li class="gridder-list" data-griddercontent="#client-{{name}}">
-          <div>
-           <img src="assets/portfolio/{{name}}.png" class="img-responsive" />
-          <div class="overlay">
-            <span class="title">{{client}}</span><br>
-            <span class="description">{{description}}</span>
-          </div>
-        </div>
-
-        </li>
-        {{/clients}}
-      </ul>
-      {{#clients}}
-      <div id="client-{{name}}" class="gridder-content">
-          <img src="assets/images/close.svg" class="close_button" data-griddercontent="#client-{{name}}"/>
-          <p class="markdown" content="assets/portfolio/{{name}}.html"></p>
-          <div id="carousel-{{name}}" class="slider">
-            {{#items}}
-                <img src="assets/portfolio/{{../name}}_{{this}}.png" />
-            {{/items}}
-          </div>
-        </div>
-      </div>
-      {{/clients}}
-
-    </script>
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
+    <body id="page-top" class="index">
+       <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top"><img class="img-responsive" src="/img/assets/shona_logo2.svg" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+        <!-- Header -->
     <header>
-        <div id="header-vertical-space"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">Shona Reed</span>
+                        <hr class="star-light">
+                        <span class="skills">User Experience Research and Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <article id="content-wrapper" class="main hide-about hide-portfolio">
-        <center>
-            <img class="nametag block" src="assets/images/shona_logo.svg" alt="Shona Reed UX Researcher & Designer" />
 
-            <div id="about" class="contact">
-                <article class="bio">
-                  <div class="row blurb">
-                    <div class="col-4-12">
-                      <center>
-                      <img src="assets/images/hi_res.png" /> <p></p>
-                      <a id="linkedinOutbound" class="gaClick outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
-                          <img class="" src="assets/images/linkedin_icon.svg" alt="linkedin" />
-                      </a>
-                      <a id="twitterOutbound" class="gaClick outline-outward twitter" href="https://twitter.com/uxisready?refsrc=email">
-                          <img class="" src="assets/images/twitter_icon.svg" alt="twitter" />
-                      </a>
-                      <a id="emailOutbound" class="gaClick outline-outward email" href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
-                          <img class="" src="assets/images/email_icon.svg" alt="email ux@shonareed.com" />
-                      </a>
-                    </center>
+    
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Selected Work</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
+     <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ">
+                  <img class="img-responsive" src="img/hi_res.png" alt="">
+                </div>
+                <div class="col-lg-8">
+                  <p>
+                    I am a lead <span>UX Researcher & Designer</span> with over <span>ten years experience</span> leading UX and service design projects across multiple channels. I have aided many companies, from <span>start&#8209;ups </span>to<span> Fortune 500 companies</span> to launch successful products.
+                  </p>
+                  <p>
+                    My approach balances <span>qualitative and quantitative research methods</span> with creative flair and a <span>genuine passion</span> for creating products people are excited to use.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>San Francisco</h3>
+                        <p>
+                            
+                                 <br>
+		                    
+                        </p>
                     </div>
-                    <div class="col-8-12">
-                      <p>
-                        I am a lead <span>UX Researcher & Designer</span> with over <span>ten years experience</span> leading UX and service design projects across multiple channels. I have aided many companies, from <span>start&#8209;ups </span>to<span> Fortune 500 companies</span> to launch successful products.
-                      </p>
-                      <p>
-                        My approach balances <span>qualitative and quantitative research methods</span> with creative flair and a <span>genuine passion</span> for creating products people are excited to use.
-                      </p>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="http://twitter.com/uxisready" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+		                    
+                            <li>
+                                <a href="http://github.com/4point7" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+		                    
+                        </ul>
                     </div>
-
-                  </div>
-             </article>
+                    <div class="footer-col col-md-4">
+                        <h3>Credits</h3>
+                        <p>... <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
             </div>
-
-            <div id="portfolio" class="animated portfolio">
-                <article class="bio">
-                  <div id="content" class="container blur">
-                    <!--expand folio list template here...-->
-                  </div>
-                </article>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Shona Reed 2015
+                    </div>
+                </div>
             </div>
+        </div>
+    </footer>
 
-            <div class="img-icons">
-                <a id="linkedinOutbound" class="gaClick outline-outward linked-in" href="https://www.linkedin.com/in/shonar">
-                    <img class="" src="assets/images/linkedin_icon.svg" alt="linkedin" />
-                </a>
-                <a id="twitterOutbound" class="gaClick outline-outward twitter" href="https://twitter.com/uxisready?refsrc=email">
-                    <img class="" src="assets/images/twitter_icon.svg" alt="twitter" />
-                </a>
-                <a id="emailOutbound" class="gaClick outline-outward email" href="mailto:ux@shonareed.com?subject=hello%20(via%20shonareed.com)&body=Hit%20send%20and%20I%27ll%20get%20right%20back%20to%20you.%20-%20Shona">
-                    <img class="" src="assets/images/email_icon.svg" alt="email ux@shonareed.com" />
-                </a>
-            </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
-          </center>
-    </article>
+     <!-- Portfolio Modals -->
+ 
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/handlebars-v4.0.4.js"></script>
-    <script src="js/sss.js"></script>
-    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.10/jquery.popupoverlay.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
 
-    <script>
-    var main = function() {
-    "use strict";
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
 
-      $(".gaClick").click(function() {
-        _gaq.push(['_trackEvent', this.id, 'clicked'])
-      });
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    
+    <script src="/js/contact_me_static.js"></script>
+    
 
-      // portfolio setup and config.
-      var context = {
-        clients: [{
-          "name": "uxisready",
-          "client": "UX is ready",
-          "description": "ux consultancy, research, lean ux, agile",
-          "items": ["a", "b"]
-        }, {
-          "name": "photobooks",
-          "client": "Snapfish Photo Books",
-          "description": "e-commerce, personalized products",
-          "items": ["a", "b", "c", "d"]
-        }, {
-          "name": "prints",
-          "client": "Snapfish Photos Prints",
-          "description": "e-commerce, photo applications",
-          "items": ["a", "b", "c"]
-        }, {
-          "name": "checkout",
-          "client": "Snapfish Checkout",
-          "description": "e-commerce, worldwide, conversion",
-          "items": ["a", "b", "c"]
-        }, {
-          "name": "bluewolf",
-          "client": "Bluewolf",
-          "description": "crm solution, media and sales",
-          "items": ["a"]
-        }, {
-          "name": "academyofart",
-          "client": "Academy Of Art",
-          "description": "e-learning, university, educational applications",
-          "items": ["a"]
-        }, {
-          "name": "bofa",
-          "client": "Bank of America",
-          "description": "online banking, financial tools",
-          "items": ["a"]
-        }, {
-          "name": "sfmoma",
-          "client": "SF MoMA",
-          "description": "e-learning, museum, educational applications",
-          "items": ["a"]
-        }, {
-          "name": "filmoids",
-          "client": "self",
-          "description": "desktop video system",
-          "items": ["a"]
-        }]
-      };
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/freelancer.js"></script>
 
-      var folio = $("#folio-list").html();
-      $("#content").html(Handlebars.compile(folio)(context)); // push templated document content
+    
 
-      $(".markdown").each(function(index) {
-       $(this).load($(this).attr("content")); // could be parsed on load...
-      });
-
-      $('gridder-content').popup({
-        transition: 'all 0.6s',
-        opacity:1,
-        scrolllock:true,
-      });
-
-      $("li.gridder-list").click(function(){
-        var target = $(this).attr("data-griddercontent");
-        $(target).popup("show");
-      });
-
-      $(".close_button").click(function(){
-        var target = $(this).attr("data-griddercontent");
-        $(target).popup("hide");
-      });
-
-      $('.slider').sss({
-         slideShow : true, // Set to false to prevent SSS from automatically animating.
-         startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
-         transition : 500, // Length (in milliseconds) of the fade transition.
-         speed : 2550, // Slideshow speed in milliseconds.
-        // showNav : true // Set to false to hide navigation arrows.
-      });
-
-    };
-
-    $(main);
-    </script>
-</body>
-
+    </body>
 </html>
