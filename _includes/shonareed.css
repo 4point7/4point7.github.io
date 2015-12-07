@@ -9,18 +9,11 @@ navbar-fixed-top.navbar-shrink {
 section {
 xbackground:  url(/images/bg_top.png) bottom center repeat fixed;
 }
-
-.navpic {
-  height: 4em;
-}
-.navbar-nav>.active>a {
-    background-color: #58A6A2 !important;
-}
-
 section#about {
   background: #000;
   text-align: justify;
 }
+
 section.main header {
   padding-top: 2%;
 }
@@ -28,17 +21,6 @@ section.main header {
 section#about .id-badge {
   float: left;
   max-width: 250px;
-}
-#about.success {
-  background-color: #58A6A2;
-  max-width: 1400px;
-  color: #000;
-}
-
-#about P SPAN {
-  xcolor: #58A6A2;
-  color: #fff;
-  font-weight: 600;
 }
 section .img-icons {
 
@@ -48,7 +30,25 @@ section .img-icons img {
   border-radius: 50%;
 }
 
- H2 {
+.navpic {
+  height: 4em;
+}
+.navbar-nav>.active>a {
+    background-color: #58A6A2 !important;
+}
+
+#about.success {
+  background-color: #58A6A2;
+  color: #000;
+}
+
+#about P SPAN {
+  xcolor: #58A6A2;
+  color: #fff;
+  font-weight: 600;
+}
+
+H2 {
   color: #58A6A2;
 }
 H3 {
@@ -70,14 +70,6 @@ P {
 .footer-above {
   display: none;
 }
-xfooter {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   width:100%;
-   background:#999;
-   z-index: 1000;
-}
 
 footer .footer-below {
     padding: 10px 0;
@@ -97,6 +89,10 @@ footer P {
 #portfolio .portfolio-item {
     padding: 2em;
     text-align: center;
+}
+
+#portfolio .portfolio-link img{
+margin:auto;
 }
 
 .caption-content {
@@ -133,4 +129,30 @@ footer P {
 H3 {
   padding: 0;
 
+}
+
+.img-centered {
+  margin-bottom: 0;
+}
+.portfolio-modal .modal-content .img-centered.screencap {
+  _border:red 1px dashed;
+  margin:0;
+  padding:0;
+}
+
+.portfolio-modal .btn-close {
+  margin-top:3em;
+}
+
+P.project-text {
+  padding: 2% 16% 2% 10%;
+}
+P.project-text-narrow {
+    padding: 2em 0 2em 0%;
+}
+
+.portfolio-modal .close-modal .lr {
+-webkit-transform: rotate(0deg); 
+-ms-transform: rotate(0deg);
+ transform: rotate(0deg);
 }

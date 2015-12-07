@@ -4,17 +4,20 @@
   <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
           <div class="lr">
-              <div class="rl"><i class="fa fa-plus"></i>
-              </div>
+            <img src="images/close.svg" alt="close" class="close-icon">
           </div>
       </div>
       <div class="container">
           <div class="row">
             <!--{{ post.modal-id }}-->
               <div class="col-lg-8 col-lg-offset-2">
+
+              </div>
+
+              <div class="modal-body">
                 <div class="row">
                   <div class="col-md-4">
-                    <h2><a href="http://startbootstrap.com"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
+                    <h2><a href="#about"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
                   </div>
                   <div class="col-md-8">
 
@@ -25,30 +28,30 @@
                     {% endfor %}
 
                     <div class="project-role">
-                      Role: <strong><a href="http://startbootstrap.com">{{ post.category }}</a></strong>
+                      Role: <strong><a href="#about">{{ post.category }}</a></strong>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="modal-body">
-                <img src="images/{{ post.alt }}_a.png" class="img-responsive img-centered" alt="{{ post.alt }}">
                 <div class="row">
-                  <div class="col-md-8 col-md-offset-1">
-                    <p>{{ post.description }}</p>
+                  <div class="col-md-12">
+                    <img src="images/{{ post.alt }}_a.png" class="img-responsive img-centered screencap" alt="{{ post.alt }}">
+                    <p class="project-text hidden-xs">{{ post.description }}</p>
+                    <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ post.description }}</p>
+                    {% for project in site.data.projects %}
+                      {% if project.name == post.project %}
+                        {% for item in project.items %}
+                          <img src="images/{{ post.alt }}_{{ item }}.png" class="img-responsive img-centered screencap" alt="{{ post.alt }}">
+                        {% endfor %}
+                      {% endif %}
+                    {% endfor %}
+
+                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
                   </div>
                 </div>
-                {% for project in site.data.projects %}
-                  {% if project.name == post.project %}
-                    {% for item in project.items %}
-                      <img src="images/{{ post.alt }}_{{ item }}.png" class="img-responsive img-centered" alt="{{ post.alt }}">
-                    {% endfor %}
-                  {% endif %}
-                {% endfor %}
 
               </div>
 
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 
           </div>
         </div>
