@@ -17,10 +17,16 @@
                     <h2><a href="http://startbootstrap.com"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
                   </div>
                   <div class="col-md-8">
-                    <h3>{{ post.title }}</h3>
-                <div class="project-role">
-                  Role: <strong><a href="http://startbootstrap.com">{{ post.category }}</a></strong>
-                </div>
+
+                    {% for client in site.data.projects %}
+                      {% if client.name == post.project %}
+                      <h3>{{ client.client }}</h3>
+                      {% endif %}
+                    {% endfor %}
+
+                    <div class="project-role">
+                      Role: <strong><a href="http://startbootstrap.com">{{ post.category }}</a></strong>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 9
+date: 2014-07-15
+img: sfmoma.png
+alt: sfmoma
+project-date: April 2010
+client: San Francisco Museum of Modern Art (SFMOMA)
+category: User Research / Interaction Design for Prototype
+description: 'Making Sense of Modern Art' is an extensive and engaging guide to modern and contemporary works in SFMOMA's permanent collection.'Art Think' was developed to allow educators to create school curriculum utilizing learning modules taken from the Making Sense of Modern Art program.Concept was prototyped and user tested during a semester in high schools in San Francisco, with art teachers and students.
+---
