@@ -9,5 +9,6 @@ project-date: April 2010
 client: Bluewolf Marketing
 client_logo: logo_chron.png
 category: UI Designer
-description: User interface design of a CRM solution for the San Francisco Chronicle to manage media ad sales. It allowed the Chronicle to track the complex relationship between brands, advertisers and agencies, allowing them a 360 view of their media ad sales. The tool streamlined their ability to sell advertising and process orders.
+intro: User interface design of a CRM solution for the San Francisco Chronicle to manage media ad sales.
+description: Enabling the Chronicle to track the complex relationship between brands, advertisers and agencies, while providing them a 360 view of their media ad sales. The tool streamlined their ability to sell advertising and process orders.
 ---

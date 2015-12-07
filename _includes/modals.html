@@ -28,15 +28,21 @@
                     {% endfor %}
 
                     <div class="project-role">
-                      Role: <strong><a href="#about">{{ post.category }}</a></strong>
+                      <strong class="role">{{ post.category }}</strong>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12">
+
+                    <p class="project-text hidden-xs">{{ post.intro }}</p>
+                    <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ post.intro }}</p>
+
                     <img src="images/{{ post.alt }}_a.png" class="img-responsive img-centered screencap" alt="{{ post.alt }}">
+
                     <p class="project-text hidden-xs">{{ post.description }}</p>
                     <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ post.description }}</p>
+
                     {% for project in site.data.projects %}
                       {% if project.name == post.project %}
                         {% for item in project.items %}
