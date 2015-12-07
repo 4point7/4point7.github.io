@@ -1,0 +1,18 @@
+
+    <!-- Client Grid Section -->
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Clients</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for clientlogo in site.data.clientlist %}
+                    <div class="col-sm-3 client-list">
+                        <img src="images/{{ clientlogo }}" class="img-responsive" alt="{{ post.alt }}">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>

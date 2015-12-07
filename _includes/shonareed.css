@@ -1,0 +1,136 @@
+header, .navbar {
+ background: black;
+}
+
+navbar-fixed-top.navbar-shrink {
+  padding:0;
+}
+
+section {
+xbackground:  url(/images/bg_top.png) bottom center repeat fixed;
+}
+
+.navpic {
+  height: 4em;
+}
+.navbar-nav>.active>a {
+    background-color: #58A6A2 !important;
+}
+
+section#about {
+  background: #000;
+  text-align: justify;
+}
+section.main header {
+  padding-top: 2%;
+}
+
+section#about .id-badge {
+  float: left;
+  max-width: 250px;
+}
+#about.success {
+  background-color: #58A6A2;
+  max-width: 1400px;
+  color: #000;
+}
+
+#about P SPAN {
+  xcolor: #58A6A2;
+  color: #fff;
+  font-weight: 600;
+}
+section .img-icons {
+
+}
+section .img-icons img {
+  height: 3em;
+  border-radius: 50%;
+}
+
+ H2 {
+  color: #58A6A2;
+}
+H3 {
+  padding-bottom: 1.5em;
+}
+
+.project-role {
+  padding-bottom:2em;
+}
+
+P {
+  line-height: 1.5em;
+  font-size: 22px;
+}
+
+.modal-body P {
+  text-align: left;
+}
+.footer-above {
+  display: none;
+}
+xfooter {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   width:100%;
+   background:#999;
+   z-index: 1000;
+}
+
+footer .footer-below {
+    padding: 10px 0;
+    background-color: #58A6A2;
+}
+
+footer P {
+  font-size: 11px;
+  padding: 1em;
+}
+/* IE 6 */
+* html footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+#portfolio .portfolio-item {
+    padding: 2em;
+    text-align: center;
+}
+
+.caption-content {
+    padding: 1em;
+}
+
+.thumb_title {
+    color: #58a6a2;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    line-height: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding:0.3em;
+}
+.thumb_tag {
+    font-family: Arial, sans-serif;
+    color: grey;
+    font-size: 11pt;
+    line-height: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding:0.3em;
+}
+
+.portfolio-item:hover .thumb_title {
+  font-weight: 900;
+}
+
+.headshot {
+  padding:1em;
+}
+
+H3 {
+  padding: 0;
+
+}
