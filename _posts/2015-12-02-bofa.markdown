@@ -6,9 +6,10 @@ img: bofa.png
 alt: bofa
 project: bofa
 project-date: April 2010
+project-role: Interaction Designer / UX Lead
 client: Bank of America
 client_logo: logo_bofa.png
-category:  Interaction Designer / UX Lead
+category:  UX
 intro: For this project I Designed process flows, navigational systems, information architectures, and detailed page specifications for financial applications and sales websites.
 description: Projects included a 'Relationship Rewards' web application, which served as a base to rewards enable all Bank of America products. As well as the re-design and re-brand of Bank of America’s three European acquisition websites. Due to client confidentiality, case studies of these projects are only available on request.
 ---
