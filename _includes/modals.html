@@ -1,40 +1,53 @@
  <!-- Portfolio Modals -->
  {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+              <div class="rl"><i class="fa fa-plus"></i>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+            <!--{{ post.modal-id }}-->
+              <div class="col-lg-8 col-lg-offset-2">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                  <div class="col-md-4">
+                    <h2><a href="http://startbootstrap.com"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
+                  </div>
+                  <div class="col-md-8">
+                    <h3>{{ post.title }}</h3>
+                <div class="project-role">
+                  Role: <strong><a href="http://startbootstrap.com">{{ post.category }}</a></strong>
                 </div>
-            </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-body">
+                <img src="images/{{ post.alt }}_a.png" class="img-responsive img-centered" alt="{{ post.alt }}">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-1">
+                    <p>{{ post.description }}</p>
+                  </div>
+                </div>
+                {% for project in site.data.projects %}
+                  {% if project.name == post.project %}
+                    {% for item in project.items %}
+                      <img src="images/{{ post.alt }}_{{ item }}.png" class="img-responsive img-centered" alt="{{ post.alt }}">
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
+
+              </div>
+
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 {% endfor %}
