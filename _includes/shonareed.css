@@ -23,7 +23,7 @@ section#about .id-badge {
   max-width: 250px;
 }
 section .img-icons {
-
+  padding:2em;
 }
 section .img-icons img {
   height: 3em;
@@ -152,7 +152,7 @@ P.project-text-narrow {
 }
 
 .portfolio-modal .close-modal .lr {
--webkit-transform: rotate(0deg); 
+-webkit-transform: rotate(0deg);
 -ms-transform: rotate(0deg);
  transform: rotate(0deg);
 }
