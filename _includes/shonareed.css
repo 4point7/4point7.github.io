@@ -7,8 +7,9 @@ navbar-fixed-top.navbar-shrink {
 }
 
 section {
-xbackground:  url(/images/bg_top.png) bottom center repeat fixed;
+  padding: 0 0 3em 0;
 }
+
 section#about {
   background: #000;
   text-align: justify;
@@ -22,6 +23,11 @@ section#about .id-badge {
   float: left;
   max-width: 250px;
 }
+
+section H3  {
+  margin: 2em 0 1em 0;
+}
+
 section .img-icons {
   padding:2em;
 }
