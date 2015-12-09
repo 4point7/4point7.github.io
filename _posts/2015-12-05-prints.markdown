@@ -9,6 +9,7 @@ project-date: April 2010
 project-role: Lead UX Designer, 22 markets worldwide
 client: Snapfish by HP
 client_logo: logo_snap.png
+client-confidentiality: Due to client confidentiality, a case study of this project is only available on request.
 category: UX
 intro: Snapfish is a digital photo and e-commerce company.
 contents:
@@ -19,6 +20,5 @@ contents:
    text: People are also taking more digital images, so issues like cropping which occurs when a customer prints a digital (3.4) image on a classic (2.3) print size needed a solution.  An application was needed which allowed users to be able to create, edit and review large quantities of prints before entering the checkout flow.
    caption: Sprint planning and Agile stories with estimates
  - image: c
-   text: Due to client confidentiality, a case study of this project is only available on request.
    caption: Primary persona "Emily"
 ---

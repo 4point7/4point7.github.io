@@ -9,9 +9,10 @@ project-date: April 2012
 project-role: Lead UX Designer, 22 markets worldwide
 client: Snapfish by HP
 client_logo: logo_snap.png
+client-confidentiality: Due to client confidentiality, case studies of these projects are only available on request.
 category: UX
 intro: Snapfish is a digital photo and e-commerce company.
 contents:
  - image: a
-   text: Designed process flows, navigational systems, information architectures, and detailed page specifications for financial applications and sales websites. Projects included a 'Relationship Rewards' web application, which served as a base to rewards enable all Bank of America products. As well as the re-design and re-brand of Bank of America’s three European acquisition websites. Due to client confidentiality, case studies of these projects are only available on request.
+   text: Designed process flows, navigational systems, information architectures, and detailed page specifications for financial applications and sales websites. Projects included a 'Relationship Rewards' web application, which served as a base to rewards enable all Bank of America products. As well as the re-design and re-brand of Bank of America’s three European acquisition websites.
 ---

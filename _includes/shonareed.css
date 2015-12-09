@@ -61,10 +61,6 @@ H3 {
   padding-bottom: 1.5em;
 }
 
-.project-role {
-  padding-bottom:2em;
-}
-
 P {
   line-height: 1.5em;
   font-size: 22px;
@@ -140,9 +136,11 @@ H3 {
   margin-bottom: 0;
 }
 .portfolio-modal .modal-content .img-centered.screencap {
-  _border:red 1px dashed;
-  margin:0;
-  padding:0;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 1em;
+  color:rgba(0,0,0,0.1);
 }
 
 .portfolio-modal .btn-close {58a6a2
@@ -154,6 +152,10 @@ P.project-text {
 }
 P.project-text-narrow {
     padding: 2em 0 2em 0%;
+}
+
+.project-role {
+  padding:0em;
 }
 
 .portfolio-modal .close-modal .lr {
@@ -179,8 +181,6 @@ P.project-text-narrow {
   background: -ms-radial-gradient(center, ellipse cover, rgba(88,166,162,0.9) 0%, rgba(255,255,255,1) 100%);
   background: radial-gradient(ellipse at center, rgba(88,166,162,0.9) 0%, rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58a6a2', endColorstr='#ffffff', GradientType=1 );
-
-
 
 }
 
