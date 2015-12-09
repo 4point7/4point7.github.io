@@ -9,7 +9,7 @@ project-date: April 2012
 project-role: Lead UX Designer, 22 markets worldwide
 client: Snapfish by HP
 client_logo: logo_snap.png
-client-confidentiality: Due to client confidentiality, case studies of these projects are only available on request.
+client-confidentiality: Due to client confidentiality, a case studies of this projects is only available on request.
 category: UX
 intro: Snapfish is a digital photo and e-commerce company.
 contents:

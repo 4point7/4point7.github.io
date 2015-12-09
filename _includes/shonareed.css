@@ -140,7 +140,6 @@ H3 {
   padding: 0;
   width: 100%;
   padding-bottom: 1em;
-  color:rgba(0,0,0,0.1);
 }
 
 .portfolio-modal .btn-close {58a6a2
@@ -186,4 +185,10 @@ P.project-text-narrow {
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity:0.8;
+}
+
+span.disclaimer {
+  line-height: 5em;
+  color: grey;
+  font-style: oblique;
 }

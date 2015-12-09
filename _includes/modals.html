@@ -29,9 +29,6 @@
                   <div class="project-role">
                     <strong class="role">{{ post.project-role }}</strong>
                   </div>
-                  <div>
-                    <span class="disclaimer">{{ post.client-confidentiality }}</span>
-                  </div>
                 </div>
               </div>
 
@@ -52,9 +49,11 @@
                       <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ content.text }}</p>
 
                   {% endfor %}
-
                   <button type="button" class="btn btn-default btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 
+                </div>
+                <div>
+                  <span class="disclaimer">{{ post.client-confidentiality }}</span>
                 </div>
               </div>
             </div>
