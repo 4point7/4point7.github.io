@@ -2,63 +2,59 @@
  {% for post in site.posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
+
       <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <img src="images/close.svg" alt="close" class="close-icon">
           </div>
       </div>
+
       <div class="container">
+
           <div class="row">
+
             <!--{{ post.modal-id }}-->
-              <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
 
-              </div>
-
-              <div class="modal-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h2><a href="#about"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
-                  </div>
-                  <div class="col-md-8">
-
-                    {% for client in site.data.projects %}
-                      {% if client.name == post.project %}
-                      <h3>{{ client.client }}</h3>
-                      {% endif %}
-                    {% endfor %}
-
-                    <div class="project-role">
-                      <strong class="role">{{ post.project-role }}</strong>
-                    </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <h2><a href="#about"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
+                </div>
+                <div class="col-md-8">
+                  {% for client in site.data.projects %}
+                    {% if client.name == post.project %}
+                    <h3>{{ client.client }}</h3>
+                    {% endif %}
+                  {% endfor %}
+                  <div class="project-role">
+                    <strong class="role">{{ post.project-role }}</strong>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-
-                    <p class="project-text hidden-xs">{{ post.intro }}</p>
-                    <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ post.intro }}</p>
-
-                    <img src="images/{{ post.alt }}_a.png" class="img-responsive img-centered screencap" alt="{{ post.alt }}">
-
-                    <p class="project-text hidden-xs">{{ post.description }}</p>
-                    <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ post.description }}</p>
-
-                    {% for project in site.data.projects %}
-                      {% if project.name == post.project %}
-                        {% for item in project.items %}
-                          <img src="images/{{ post.alt }}_{{ item }}.png" class="img-responsive img-centered screencap" alt="{{ post.alt }}">
-                        {% endfor %}
-                      {% endif %}
-                    {% endfor %}
-
-                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-
-                  </div>
-                </div>
-
               </div>
 
+              <div class="row">
+                <div class="col-md-12">
 
+                  <p class="project-text hidden-xs">{{ post.intro }}</p>
+                  <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ post.intro }}</p>
+
+                  {% for content in post.contents %}
+
+                      <figure>
+                        <img src="images/{{ post.alt }}_{{ content.image }}.png" class="img-responsive img-centered screencap" alt="{{ post.alt }}">
+                        <!--figcaption>{{ content.caption }}</figcaption-->
+                      </figure>
+
+                      <p class="project-text hidden-xs">{{ content.text }}</p>
+                      <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ content.text }}</p>
+
+                  {% endfor %}
+
+                  <button type="button" class="btn btn-default btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -11,5 +11,9 @@ client: UX is Ready
 client_logo: logo_uxisready.png
 category: UX
 intro: UX is Ready is a research & design consultancy based in Barcelona, working with clients both locally and Internationally.
-description: Some of our clients need to improve their existing user experiences, while others hire us to craft a new product or service. We tailor our process to meet each clients needs, shaping products and services that work and customers enjoy using.
+contents:
+ - image: a
+   text: Some of our clients need to improve their existing user experiences, while others hire us to craft a new product or service. We tailor our process to meet each clients needs, shaping products and services that work and customers enjoy using.
+ - image: b
+   caption: "User testing sessions for a Barcelona startup"
 ---

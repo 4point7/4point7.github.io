@@ -11,5 +11,7 @@ client: Academy of Art
 client_logo: logo_academyofart.png
 category: UX
 intro: Created detailed workflows, design templates and wireframes for custom e-Learning tools and system-wide development projects.
-description: Produced over thirty full semester web based art & design courses, in collaboration with an interdisciplinary team of subject matter experts, content editors and department directors.
+contents:
+ - image: a
+   text: Produced over thirty full semester web based art & design courses, in collaboration with an interdisciplinary team of subject matter experts, content editors and department directors.
 ---
