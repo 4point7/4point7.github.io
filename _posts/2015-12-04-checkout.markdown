@@ -14,5 +14,5 @@ category: UX
 intro: Snapfish is a digital photo and e-commerce company.
 contents:
  - image: a
-   text: Designed process flows, navigational systems, information architectures, and detailed page specifications for financial applications and sales websites. Projects included a 'Relationship Rewards' web application, which served as a base to rewards enable all Bank of America products. As well as the re-design and re-brand of Bank of America’s three European acquisition websites.
+   text: The goal of this project was to simplify the checkout flow and coupon redemption process. This included a more streamlined 'pick up' versus 'shipping' flow, as well as offering product review in the cart and generally increasing checkout reliability by decreasing errors.
 ---
