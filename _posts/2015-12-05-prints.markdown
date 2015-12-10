@@ -5,7 +5,7 @@ date: 2015-12-05
 tile: prints.png
 project: prints
 project-date: April 2010
-project-role: Lead UX Designer, 22 markets worldwide
+project-role: UX Lead, 22 markets worldwide
 client: Snapfish by HP
 client_logo: logo_snap.png
 client-confidentiality: Due to client confidentiality, a case study of this project is only available on request.
@@ -16,8 +16,8 @@ contents:
    text: The challenge was to create an application which allowed customers to create, edit and review large quantities of prints before entering the checkout flow. 
    caption: Wireframe & prototype screenshot
  - image: prints_b.png
-   text: User testing showed us that print formats are an unfamiliar and confusing topic. We designed the application so that it automatically selects the correct print format for the photos which the customer has uploaded. We also mapped the customers mental model and adapted the flow to follow a select > act > proof > buy behavior pattern. 
+   text: User testing highlighted to us that the difference in print sizes between digital and film photograph formats are an unfamiliar and confusing topic. So we designed the application to  automatically select the correct print size for the photos which the customer has uploaded. We also mapped the customers mental model and adapted the print purchase user flow to follow a "select > act > proof > buy” behavior pattern.
    caption: Sprint planning and agile stories with estimates
  - image: prints_c.png
-   caption: Customers mental model
+   caption: Customers mental model and key quotes
 ---
