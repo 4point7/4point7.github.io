@@ -2,8 +2,7 @@
 layout: default
 modal-id: 2
 date: 2015-12-05
-img: prints.png
-alt: prints
+tile: prints.png
 project: prints
 project-date: April 2010
 project-role: Lead UX Designer, 22 markets worldwide
@@ -13,12 +12,12 @@ client-confidentiality: Due to client confidentiality, a case study of this proj
 category: UX
 intro: Snapfish is a digital photo and e-commerce company.
 contents:
- - image: a
+ - image: prints_a.png
    text: Photo prints are still big sellers and on average 60% of customers order more than 40 prints.
    caption: screen captures
- - image: b
+ - image: prints_b.png
    text: People are also taking more digital images, so issues like cropping which occurs when a customer prints a digital (3.4) image on a classic (2.3) print size needed a solution.  An application was needed which allowed users to be able to create, edit and review large quantities of prints before entering the checkout flow.
    caption: Sprint planning and Agile stories with estimates
- - image: c
+ - image: prints_c.png
    caption: Primary persona "Emily"
 ---

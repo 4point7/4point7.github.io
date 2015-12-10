@@ -147,7 +147,7 @@ H3 {
 }
 
 P.project-text {
-  padding: 2% 16% 2% 10%;
+  padding: 4% 16% 4% 10%;
 }
 P.project-text-narrow {
     padding: 2em 0 2em 0%;
@@ -191,4 +191,13 @@ span.disclaimer {
   line-height: 5em;
   color: grey;
   font-style: oblique;
+}
+
+figcaption.content-caption {
+  color: #58a6a2;
+  font-size: 9pt;
+  font-weight: 900;
+  float: left;
+  margin-top: -1em;
+  margin-bottom: 1em;
 }

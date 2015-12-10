@@ -2,8 +2,7 @@
 layout: default
 modal-id: 3
 date: 2015-12-04
-img: checkout.png
-alt: checkout
+tile: checkout.png
 project: checkout
 project-date: April 2012
 project-role: Lead UX Designer, 22 markets worldwide
@@ -13,6 +12,7 @@ client-confidentiality: Due to client confidentiality, a case studies of this pr
 category: UX
 intro: Snapfish is a digital photo and e-commerce company.
 contents:
- - image: a
+ - image: checkout_a.png
+   alt:
    text: The goal of this project was to simplify the checkout flow and coupon redemption process. This included a more streamlined 'pick up' versus 'shipping' flow, as well as offering product review in the cart and generally increasing checkout reliability by decreasing errors.
 ---

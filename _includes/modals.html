@@ -39,12 +39,12 @@
                   <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ post.intro }}</p>
 
                   {% for content in post.contents %}
-
+                      {% if content.image %}
                       <figure>
-                        <img src="images/{{ post.alt }}_{{ content.image }}.png" class="img-responsive img-centered screencap" alt="{{ post.alt }}">
-                        <!--figcaption>{{ content.caption }}</figcaption-->
+                        <img src="images/{{ content.image }}" class="img-responsive img-centered screencap" alt="{{ content.caption }}">
+                        <figcaption class="content-caption">{{ content.caption }}</figcaption>
                       </figure>
-
+                      {% endif %}
                       <p class="project-text hidden-xs">{{ content.text }}</p>
                       <p class="project-text-narrow hidden-sm hidden-md hidden-lg">{{ content.text }}</p>
 
