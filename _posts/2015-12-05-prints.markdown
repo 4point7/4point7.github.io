@@ -16,7 +16,7 @@ contents:
    text: The challenge was to create an application which allowed customers to create, edit and review large quantities of prints before entering the checkout flow. 
    caption: Wireframe & prototype screenshot
  - image: prints_b.png
-   text: User testing highlighted to us that the difference in print sizes between digital and film photograph formats are an unfamiliar and confusing topic. So we designed the application to  automatically select the correct print size for the photos which the customer has uploaded. We also mapped the customers mental model and adapted the print purchase user flow to follow a "select > act > proof > buy” behavior pattern.
+   text: User testing highlighted to us that the difference in print sizes between digital and film photo formats is an unfamiliar and confusing topic. So we designed the application to  automatically select the correct print size for the photos which the customer has uploaded. We also mapped the customers mental model and adapted the print purchase flow to follow a "select > act > proof > buy” behavior pattern.
    caption: Sprint planning and agile stories with estimates
  - image: prints_c.png
    caption: Customers mental model and key quotes
