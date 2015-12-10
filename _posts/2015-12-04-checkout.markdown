@@ -19,5 +19,5 @@ contents:
  - image: checkout_a.png
    caption: Cart and billing/shipping re-designed
    alt:
-   text: The goal of this project was to simplify the checkout flow and coupon redemption process. This included a more streamlined 'pick up' versus 'shipping' flow, as well as offering product review in the cart and generally increasing checkout reliability by decreasing errors.
+   text: 
 ---
