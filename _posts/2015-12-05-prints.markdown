@@ -10,14 +10,14 @@ client: Snapfish by HP
 client_logo: logo_snap.png
 client-confidentiality: Due to client confidentiality, a case study of this project is only available on request.
 category: UX
-intro: Snapfish is a digital photo and e-commerce company.
+intro: Snapfish is a digital photo and e-commerce company. Photo prints are still big sellers and on average 60% of customers order more than 40 prints.
 contents:
  - image: prints_a.png
-   text: Photo prints are still big sellers and on average 60% of customers order more than 40 prints.
-   caption: screen captures
+   text: The challenge was to create an application which allowed customers to create, edit and review large quantities of prints before entering the checkout flow. 
+   caption: Wireframe & prototype screenshot
  - image: prints_b.png
-   text: People are also taking more digital images, so issues like cropping which occurs when a customer prints a digital (3.4) image on a classic (2.3) print size needed a solution.  An application was needed which allowed users to be able to create, edit and review large quantities of prints before entering the checkout flow.
-   caption: Sprint planning and Agile stories with estimates
+   text: User testing showed us that print formats are an unfamiliar and confusing topic. We designed the application so that it automatically selects the correct print format for the photos which the customer has uploaded. We also mapped the customers mental model and adapted the flow to follow a select > act > proof > buy behavior pattern. 
+   caption: Sprint planning and agile stories with estimates
  - image: prints_c.png
-   caption: Primary persona "Emily"
+   caption: Customers mental model
 ---
