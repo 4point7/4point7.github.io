@@ -10,7 +10,7 @@ client: Snapfish by HP
 client_logo: logo_snap.png
 client-confidentiality: Due to client confidentiality, a case study of this project is only available on request.
 category: UX
-intro: Snapfish is a digital photo and e-commerce company. Photo prints are amongst the biggest sellers with on average 60% of customers ordering more than 40 prints.
+intro: Snapfish is a digital photo and e-commerce company. Photo prints are amongst the biggest sellers with 60% of customers ordering more than 40 prints.
 contents:
  - image: prints_a.png
    text: The challenge was to create an application which allowed customers to create, edit and review large quantities of prints before entering the checkout flow. 
