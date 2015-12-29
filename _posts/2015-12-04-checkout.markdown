@@ -15,7 +15,7 @@ contents:
  - image: checkout_b.png
    caption: Purchase funnel dropout rates & user stories
    alt:
-   text: We analyzed the web traffic in the primary markets over a twelve month period, collected feedback from the customer service team and conducted usability testing. All of this allowed us to fully understand where customer were dropping off and their pain points.
+   text: We analyzed the web traffic in the primary markets over a twelve month period, collected feedback from the customer service team and conducted usability testing. All of this allowed us to fully understand customers' pain points and where they were dropping off.
  - image: checkout_a.png
    caption: Cart and billing/shipping re-designed
    alt:
