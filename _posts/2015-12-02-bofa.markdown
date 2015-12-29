@@ -9,8 +9,9 @@ project-role: Interaction Designer / UX Lead
 client: Bank of America
 client_logo: logo_bofa.png
 category:  UX
-intro: For this project I Designed process flows, navigational systems, information architectures, and detailed page specifications for financial applications and sales websites.
+intro: As a contractor at Bank of America I designed site architecture, process flows, wireframe schematics and detailed page specifications based on business requirements for financial applications and sales websites.
 contents:
  - image: bofa_a.png
-   text: Projects included a 'Relationship Rewards' web application, which served as a base to rewards enable all Bank of America products. As well as the re-design and re-brand of Bank of America’s three European acquisition websites. Due to client confidentiality, case studies of these projects are only available on request.
+   caption: Sample deliverables
+   text: The projects I worked on  included a Relationship Rewards application, enabling customers to easily redeem points. As well as the re-design of Bank of America’s three European acquisition websites.
 ---

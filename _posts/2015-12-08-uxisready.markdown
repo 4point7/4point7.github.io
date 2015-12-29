@@ -15,7 +15,7 @@ intro: Ux is Ready is a research & design consultancy which I co-founded in earl
 contents:
  - image: uxisready_a.png
    caption: "A mobile application for a P2P platform" 
-   text: We coach clients through an agile UX design process focusing on helping teams understand their end users, within the context of the design problem they are solving.
+   text: We coach clients through an agile UX design process. Focusing on helping teams understand their end users, within the context of the design problem they are solving.
  - image: uxisready_b.png
    caption: "User testing sessions for a Barcelona startup"
    text: Some clients hire us to craft a new product or service, while others need to improve their existing user experiences. We tailor our process to meet individual clients needs and budget, shaping products and services that work and customers enjoy using.

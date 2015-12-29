@@ -10,14 +10,14 @@ client: Snapfish by HP
 client_logo: logo_snap.png
 client-confidentiality: Due to client confidentiality, a case studies of this projects is only available on request.
 category: UX
-intro: Snapfish is a digital photo and e-commerce company.
+intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors. The design also needed to scale to meet different market requirements. 
 contents:
  - image: checkout_b.png
    caption: Purchase funnel dropout rates & user stories
    alt:
-   text: The goal of this project was to simplify the checkout flow and coupon redemption process. This included a more streamlined 'pick up' versus 'shipping' flow, as well as offering product review in the cart and generally increasing checkout reliability by decreasing errors.
+   text: We analyzed the web traffic in the primary markets over a twelve month period, collected feedback from the customer service team and conducted usability testing. All of this allowed us to fully understand where customer were dropping off and their pain points.
  - image: checkout_a.png
    caption: Cart and billing/shipping re-designed
    alt:
-   text: 
+   text: The final total purchase price needed to displayed upfront on the cart page and not on the review page as it was currently. This meant  any coupons or offers redeemed, shipping options selected or products removed needed to immediately be reflected in the total purchase price.
 ---
