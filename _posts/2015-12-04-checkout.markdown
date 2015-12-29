@@ -19,5 +19,5 @@ contents:
  - image: checkout_a.png
    caption: Cart and billing/shipping re-designed
    alt:
-   text: The final total purchase price needed to displayed upfront on the cart page and not on the review page as it was currently. This meant  any coupons or offers redeemed, shipping options selected or products removed needed to immediately be reflected in the total purchase price.
+   text: The total price needed to displayed upfront on the cart page and not for the first time on the review page as it currently was. This meant any coupons or offers redeemed; shipping options selected or products removed needed to immediately be reflected in the total price.
 ---
