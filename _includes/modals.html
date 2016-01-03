@@ -5,7 +5,9 @@
 
       <div class="close-modal" data-dismiss="modal">
           <div class="lr">
-            <img src="images/close.svg" alt="close" class="close-icon">
+            <img src="images/rewind.svg" alt="prev" class="nav-icon">
+            <img src="images/close.svg" alt="close" class="nav-icon">
+            <img src="images/forward.svg" alt="next" class="nav-icon">
           </div>
       </div>
 
@@ -18,7 +20,7 @@
 
               <div class="row">
                 <div class="col-md-4">
-                  <h2><a href="#about"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
+                  <h2><a href="{{ post.client_url }}"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
                 </div>
                 <div class="col-md-8">
                   {% for client in site.data.projects %}

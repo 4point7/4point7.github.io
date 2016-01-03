@@ -163,6 +163,11 @@ P.project-text-narrow {
  transform: rotate(0deg);
 }
 
+.portfolio-modal .close-modal .lr img.nav-icon{
+  width:32px;
+  color:green;
+}
+
 .role {
   color :#58A6A2;
 }
