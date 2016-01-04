@@ -5,7 +5,7 @@ $(".portfolio-link").on("click", function(e) {
 
 window.addEventListener("popstate", function(e) {
 	// return to home state
-	if (e.state.view == "POPUP") {
+	if (e.state.view === "POPUP") {
 		history.pushState({}, "", "/");
     $(".close-modal").click();
 	}
