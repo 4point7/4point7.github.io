@@ -8,6 +8,7 @@ project-date: April 2010
 project-role: Founder / UX Consultant
 client: UX is Ready
 client_logo: logo_uxisready.png
+client_url: http://www.uxisready.com
 client-confidentiality: Due to client confidentiality, a case studies of this projects is only available on request.
 category: UX
 category: UX

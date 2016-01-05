@@ -8,6 +8,7 @@ project-date: April 2012
 project-role: Lead UX Designer, 22 markets worldwide
 client: Snapfish by HP
 client_logo: logo_snap.png
+client_url: http://www.snapfish.com
 client-confidentiality: Due to client confidentiality, a case studies of this projects is only available on request.
 category: UX
 intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors. The design also needed to scale to meet different market requirements. 
