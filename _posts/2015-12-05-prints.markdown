@@ -14,11 +14,12 @@ category: UX
 intro: Snapfish is a digital photo and e-commerce company. Photo prints are amongst the biggest sellers with 60% of customers ordering more than 40 prints.
 contents:
  - image: prints_a.png
-   text: The challenge was to create an application which allowed customers to create, edit and review large quantities of prints before entering the checkout flow. 
+   text: The challenge was to create an application which allowed customers to collate, edit and review large quantities of prints before entering the checkout flow. Customers often receive different sizes of prints within an order or find that thier photos have been cropped. This is partly due to the increase in people taking more digital photographs with varying aspect ratios from 3.4 to 1.1 and these ratios not being equivalent to print sizes. 
    caption: Wireframe & prototype screenshot
  - image: prints_b.png
-   text: A key finding from the user testing was that the difference in print ratios between digital and film photo formats is an unfamiliar and confusing topic. So we designed the application to automatically select the correct print size for the photos uploaded , the application does the thinking for the customer. We also mapped the customers mental model of purchasing prints and aligned the purchase flow to match their behavior pattern of "select > act > proof > buy”.
+   text: I evaluated the existing print flow in the USA, Europe and Asia and analyzed the web analytics for the same markets. In tandem with this I interviewed customer service and business stakeholders. I synthesized these findings into a low-fidelity axure prototype which was used by the engineering team to create a high-fidelity prototype for user testing. This prototype allowed test participants to use their own photographs. Remote moderated testing was carried out in Ireland with six participants over two days. 
    caption: Sprint planning and agile stories with estimates
  - image: prints_c.png
+   text: A key finding from the user testing was that the difference in print ratios between digital and film photo formats is an unfamiliar and confusing topic hence the test participants were unclear about the repurcussions of their choices. The application was designed to automatically detect the correct print size for the photos uploaded, customers now make choices based on whether the photo is to be put in a photo album or hung on the wall, rather than trying to understand what aspect ratio thier source photo is. We also mapped the customers mental model of purchasing prints and aligned the purchase flow to match their behavior pattern of "select > act > proof > buy”.
    caption: Customers mental model and key quotes
 ---
