@@ -11,7 +11,7 @@ client_logo: logo_snap.png
 client_url: http://www.snapfish.com
 client-confidentiality: Due to client confidentiality, a case studies of this projects is only available on request.
 category: UX
-intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors. The design also needed to scale to meet different market requirements. 
+intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors. The design also needed to scale to meet different market requirements worldwide. 
 contents:
  - image: checkout_b.png
    caption: Purchase funnel dropout rates & user stories
@@ -20,5 +20,5 @@ contents:
  - image: checkout_a.png
    caption: Cart and billing/shipping re-designed
    alt:
-   text: The total price needed to displayed upfront on the cart page and not for the first time on the review page. This meant any coupons or offers, shipping options or deleted products needed to immediately be reflected in the total price.
+   text: A primary fnding across all markets was that the total price needed to displayed upfront on the cart page and not for the first time on the review page. This meant any coupons or offers, shipping options or deleted products needed to immediately be reflected in the total price. The first phsase of the re-design brought all the redemption flows onto the cart page, once this was stable a second design phase was kicked off to also integrate the shipping and pick-up choices. 
 ---
