@@ -5,20 +5,20 @@ date: 2015-12-04
 tile: checkout.png
 project: checkout
 project-date: April 2012
-project-role: Lead UX Designer, 22 markets worldwide
+project-role: Lead UX Researcher & Designer, 22 markets worldwide
 client: Snapfish by HP
 client_logo: logo_snap.png
 client_url: http://www.snapfish.com
 client-confidentiality: Due to client confidentiality, a case studies of this projects is only available on request.
 category: UX
-intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors. The design also needed to scale to meet different market requirements worldwide. 
+intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors. 
 contents:
  - image: checkout_b.png
    caption: Purchase funnel dropout rates & user stories
    alt:
-   text: We analyzed the web traffic in the primary markets over a twelve month period, collected feedback from the customer service team and conducted usability testing. All of this allowed us to fully understand customers' pain points and where they were dropping off.
+   text: During the discovery phase I analyzed the web traffic in the primary markets over a twelve month period, collected feedback from the customer service team and conducted usability testing. All of this allowed full understanding of the customers' pain points and where they were dropping off.
  - image: checkout_a.png
    caption: Cart and billing/shipping re-designed
    alt:
-   text: A primary fnding across all markets was that the total price needed to displayed upfront on the cart page and not for the first time on the review page. This meant any coupons or offers, shipping options or deleted products needed to immediately be reflected in the total price. The first phsase of the re-design brought all the redemption flows onto the cart page, once this was stable a second design phase was kicked off to also integrate the shipping and pick-up choices. 
+   text: A primary finding across all markets was that the total price needed to be displayed upfront on the cart page and not for the first time on the review page. This meant any coupons or offers, shipping options or deleted products needed to immediately be reflected in the total price. The first phase of the re-design brought all the redemption flows onto the cart page this was measured by running an A/B test, once this was stable a second design phase integrated the shipping and pick-up choices. 
 ---
