@@ -11,7 +11,7 @@
 }, {
   "name": "checkout",
   "client": "Snapfish Checkout",
-  "tag": "international research, usabiity testing",
+  "tag": "international research, usability testing",
   "items": ["b", "c"]
 }, {
   "name": "bluewolf",
