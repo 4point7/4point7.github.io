@@ -9,7 +9,7 @@ project-role: UX Lead, 22 markets worldwide
 client: Snapfish by HP
 client_logo: logo_snap.png
 client_url: http://www.snapfish.com
-client-confidentiality: Due to client confidentiality, a case study of this project is only available on request.
+client-confidentiality: Due to client confidentiality, research samples are only available on request.
 category: UX
 intro: Snapfish is a digital photo and e-commerce company. Photo prints are amongst the biggest sellers with 60% of customers ordering between 40 - 200 prints. The challenge was to create an application which allowed customers to organize, edit and review their prints before entering the checkout flow. Customers often received different sizes of prints within an order or find that their photos have been cropped. This is partly due to the increase in people taking more digital photographs with varying aspect ratios from 3.4 to 1.1 and these ratios not being equivalent to print sizes. 
 contents:

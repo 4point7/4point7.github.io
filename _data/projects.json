@@ -1,29 +1,29 @@
 [{
   "name": "uxisready",
   "client": "UX is Ready",
-  "tag": "ux consultancy,startups, lean ux",
+  "tag": "design research, usability testing, insights",
   "items": ["b"]
 }, {
   "name": "prints",
-  "client": "Snapfish Photos Prints",
-  "tag": "e-commerce, photo apps",
+  "client": "Snapfish Photo Prints",
+  "tag": "in-depth interviews, remote moderated testing",
   "items": ["b", "c"]
 }, {
   "name": "checkout",
   "client": "Snapfish Checkout",
-  "tag": "e-commerce, worldwide",
+  "tag": "international research, usabiity testing",
   "items": ["b", "c"]
 }, {
   "name": "bluewolf",
   "client": "Bluewolf",
-  "tag": "crm solution, media and sales",
+  "tag": "ui design, prototyping",
 }, {
   "name": "bofa",
   "client": "Bank of America",
-  "tag": "online banking, financial tools",
+  "tag": "interaction design, information architecture",
 }, {
   "name": "aau",
   "client": "Academy Of Art",
-  "tag": "e-learning, university, educational",
+  "tag": "user interface design, wireframing",
 }
 ]};
