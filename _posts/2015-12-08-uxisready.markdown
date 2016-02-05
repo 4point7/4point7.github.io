@@ -5,7 +5,7 @@ date: 2015-12-08
 tile: uxisready.png
 project: uxisready
 project-date: April 2010
-project-role: Founder / UX Consultant
+project-role: Founder / UX Research Consultant
 client: UX is Ready
 client_logo: logo_uxisready.png
 client_url: http://www.uxisready.com
