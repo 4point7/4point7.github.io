@@ -9,6 +9,10 @@
   "tag": "in-depth interviews, remote moderated testing",
   "items": ["b", "c"]
 }, {
+  "name": "moj",
+  "client": "Gov.uk Digital services",
+  "tag": "user research",
+}, {
   "name": "checkout",
   "client": "Snapfish Checkout",
   "tag": "international research, usability testing",
@@ -21,9 +25,5 @@
   "name": "bofa",
   "client": "Bank of America",
   "tag": "interaction design, information architecture",
-}, {
-  "name": "aau",
-  "client": "Academy Of Art",
-  "tag": "user interface design, wireframing",
 }
 ]};
