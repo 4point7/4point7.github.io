@@ -10,12 +10,12 @@
 }, {
   "name": "prints",
   "client": "Snapfish Photo Prints",
-  "tag": "international research, remote moderated testing",
+  "tag": "remote moderated testing",
   "items": ["b", "c"]
 }, {
   "name": "checkout",
   "client": "Snapfish Checkout",
-  "tag": "international research, usability testing",
+  "tag": "international research",
   "items": ["b", "c"]
 }, {
   "name": "bluewolf",
@@ -24,6 +24,6 @@
 }, {
   "name": "bofa",
   "client": "Bank of America",
-  "tag": "interaction design, information architecture",
+  "tag": "UX design",
 }
 ]};
