@@ -4,14 +4,14 @@
   "tag": "design research, usability testing",
   "items": ["b"]
 }, {
- "name": "moj",
-  "client": "Gov.uk Digital services",
-  "tag": "user research, strategy",
-}, {
   "name": "prints",
   "client": "Snapfish Photo Prints",
   "tag": "international research, remote moderated testing",
   "items": ["b", "c"]
+}, {
+  "name": "moj",
+  "client": "Gov.uk Digital services",
+  "tag": "user research, strategy",
 }, {
   "name": "checkout",
   "client": "Snapfish Checkout",
