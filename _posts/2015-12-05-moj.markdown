@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 2
-date: 2015-12-05
+date: 2016-01-01
 tile: moj.png
 project: moj
 project-date: November 2015
