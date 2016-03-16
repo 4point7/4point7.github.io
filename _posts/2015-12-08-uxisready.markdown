@@ -9,8 +9,7 @@ project-role: Founder / UX Research Consultant
 client: UX is Ready
 client_logo: logo_uxisready.png
 client_url: http://www.uxisready.com
-client-confidentiality: Due to client confidentiality, a case studies of this projects is only available on request.
-category: UX
+client-confidentiality: Due to client confidentiality, case studies of these projects are only available on request.
 category: UX
 intro: Ux is Ready is a research & design consultancy which I co-founded in early 2014 to support the rapidly emerging startup scene in Barcelona.
 contents:
