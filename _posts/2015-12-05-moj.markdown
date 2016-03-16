@@ -14,10 +14,10 @@ category: UX
 intro: Government Digital Services (GDS) in the UK has the job of digitally transforming government, to achieve this it operates more like a tech start up than a government organization. The Ministry of Justice (MOJ) is a government department which is focused on creating a digitally enabled criminal justice service. The challenge was to design a new digital channel for the submission and management of advocates bills for defense costs in the Crown Court. The system currently being used for submitting these claims is the accumulation of years of task specific processes on top of processes which all have numerous supporting forms and protocols. 
 contents:
   - image: moj_a.png
-    caption: Contextual inquiry, user needs sort
+    caption: Journey map with user needs, discovery phase
     text: As the lead researcher on this project I was embedded in a multi-disciplinary agile team and designed and executed the research plan from the discovery phase through to the beta launch. During discovery we mapped the end to end service and used a number of different sources of insight to identify user needs and develop an understanding of the  service’s users. This work allowed the team to focus the MVP on a billing application called ‘Advocate Defence Payments’. At the beginning of the alpha phase the designer prototyped some initial concepts for each user story. I used these for concept testing and as a stimulus to get a deeper understanding of the user needs. The prototype was iterated upon using build/measure/learn cycles throughout beta until it was at a point where users could begin to process claims and be paid via the system.
   - image: moj_b.png
-    caption: Usability testing
+    caption: Usability testing, alpha phase
     text: The new system addresses the primary user needs of both legal providers and government employees. Legal professionals can directly submit their claims from their case management system to the government processing centre, including all trial evidence. Claims will be queued and allocated via a custom built tool which will considerably reduce the hours currently involved in allocating claims to government employees. Another key issue which we solved was reducing the number of rejected claims, this was tackled first at the process level and secondly via a communication tool which will allow items to be resolved directly between the provider and government caseworker before the claim is assessed.
 
 ---
