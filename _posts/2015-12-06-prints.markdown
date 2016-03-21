@@ -15,8 +15,8 @@ intro: Snapfish is a digital photo and e-commerce company. Photo prints are amon
 contents:
  - image: prints_b.png
    text: I evaluated the existing print flow in the USA, Europe and Asia and then analyzed the corresponding web analytics. In tandem with this I interviewed customer service and business stakeholders. I synthesized these findings into a low-fidelity axure prototype which was used by the engineering team to create a high-fidelity prototype for user testing.  Remote moderated testing was carried out in Ireland with six participants over two days and the prototype allowed test participants to use their own Snapfish accounts and photographs.
-   caption: Voice of customer, sprint planning, a panoramic image ordered in three different print sizes
+   caption: Voice of customer, sprint planning, image ordered in three different print sizes
  - image: prints_c.png
    text: A key finding from the user testing was that the difference in aspect ratios between digital and film photo formats is an unfamiliar and confusing topic hence the test participants were unclear about the repurcussions of the choices they were being asked to make. The application was designed to automatically detect the correct print size for the customers photos. In addition to this customers now make choices based on whether their photos are to be put in a photo album or hung on the wall, rather than trying to understand what aspect ratio their source photo is. We also mapped the customers mental model of purchasing prints and aligned the end-to-end purchase flow to match their behavior pattern of "select > act > proof > buy”.
-   caption: Customers mental model, key quotes4
+   caption: Customers mental model, key quotes
 ---
