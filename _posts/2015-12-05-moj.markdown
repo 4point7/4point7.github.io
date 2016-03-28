@@ -11,7 +11,7 @@ client_logo: logo_govuk.png
 client_url: https://gov.uk
 client_confidentiality: Due to client confidentiality, research samples are only available on request.
 category: UX
-intro: Government Digital Services (GDS) in the UK has the job of digitally transforming government, to achieve this it operates more like a tech start up than a government organization. The Ministry of Justice (MOJ) is a government department which is focused on creating a digitally enabled criminal justice service. The challenge was to design a new digital channel for the submission and management of advocates bills for defense costs in the Crown Court. The system currently being used for submitting these claims is the accumulation of years of task specific processes on top of processes which all have numerous supporting forms and protocols. 
+intro: Government Digital Services (GDS) in the UK has the job of digitally transforming government, to achieve this it operates more like a tech start up than a government organization. The Ministry of Justice (MOJ) is a government department which is focused on creating a digitally enabled criminal justice service. The challenge was to design a new digital channel for the submission and management of advocates bills for defense costs in the Crown Court. The system currently being used for submitting these claims is mainly paper based and the accumulation of years of task specific processes on top of processes which all have numerous supporting forms and protocols. 
 contents:
   - image: moj_a.png
     caption: Journey map with user needs, discovery phase
