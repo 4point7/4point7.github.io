@@ -12,7 +12,7 @@ section {
 
 section#about {
   background: #000;
-  text-align: justify;
+  text-align: left;
 }
 
 section.main header {
@@ -50,7 +50,7 @@ section .img-icons img {
 
 #about P SPAN {
   xcolor: #58A6A2;
-  color: #fff;
+  color: #f5f4f4;
 }
 
 H2 {
