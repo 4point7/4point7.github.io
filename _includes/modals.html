@@ -2,15 +2,26 @@
  {% for post in site.posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
-
-      <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <button type="button" class="btn btn-default btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            <!--img src="images/rewind.svg" alt="prev" class="nav-icon"-->
-            <!--img src="images/close.svg" alt="close" class="nav-icon"-->
-            <!--img src="images/forward.svg" alt="next" class="nav-icon"-->
+      <!--div class="close-modal" data-dismiss="modal">
+        <button type="button" class="btn btn-default " data-dismiss="modal"><i class="fa fa-times"></i></button>
+      </div-->
+          <div class="project-nav">
+            <a goto="#portfolioModal-{{ post.modal-prev }}" class="portfolio-link prev" >
+              {% if post.modal-prev %}
+              <i class="fa fa-arrow-left fa-x"></i> {{ post.modal-prev-label }}
+              {% else %}
+              &nbsp;
+              {% endif %}
+            </a>
+            <a class="portfolio-link dismiss"><i class="fa fa-times fa-3x"></i></a>
+            <a goto="#portfolioModal-{{ post.modal-next }}" class="portfolio-link next" >
+              {% if post.modal-next %}
+              {{ post.modal-next-label }} <i class="fa fa-arrow-right fa-x"></i>
+              {% else %}
+              &nbsp;
+              {% endif %}
+            </a>
           </div>
-      </div>
 
       <div class="container">
 
@@ -20,10 +31,13 @@
             <div class="modal-body">
 
               <div class="row">
+                <div class="col-md-1">
+                  <!--a href="#portfolioModal-{{ post.modal-prev }}" class="portfolio-link prev"><img src="images/rewind.svg" alt="prev" class="nav-icon"/></a-->
+                </div>
                 <div class="col-md-4">
                   <h2><a href="{{ post.client_url }}"><img src="images/{{ post.client_logo }}" class="img-responsive img-centered" alt="{{ post.client }}"></a></h2>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                   {% for client in site.data.projects %}
                     {% if client.name == post.project %}
                     <h3>{{ client.client }}</h3>
@@ -32,6 +46,9 @@
                   <div class="project-role">
                     <strong class="role">{{ post.project-role }}</strong>
                   </div>
+                </div>
+                <div class="col-md-1">
+                  <!--a href="#portfolioModal-{{ post.modal-next }}" class="portfolio-link next"><img src="images/forward.svg" alt="next" class="nav-icon"></a-->
                 </div>
               </div>
 

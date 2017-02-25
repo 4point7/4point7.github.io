@@ -1,6 +1,10 @@
 ---
 layout: default
-modal-id: 6
+modal-id: 5
+modal-prev: 4
+modal-next: 6
+modal-prev-label: SNAPFISH CHECKOUT
+modal-next-label: BLUEWOLF
 date: 2015-12-02
 tile: bofa.png
 project: bofa

@@ -1,6 +1,8 @@
 ---
 layout: default
-modal-id: 5
+modal-id: 6
+modal-prev: 5
+modal-prev-label: BANK OF AMERICA
 date: 2014-12-03
 tile: bluewolf.png
 project: bluewolf

@@ -1,6 +1,10 @@
 ---
 layout: default
 modal-id: 3
+modal-prev: 2
+modal-next: 4
+modal-prev-label: GOV.UK DIGITAL SERVICES
+modal-next-label: SNAPFISH CHECKOUT
 date: 2015-12-06
 tile: prints.png
 project: prints
@@ -11,7 +15,7 @@ client_logo: logo_snap.png
 client_url: http://www.snapfish.com
 client-confidentiality: Due to client confidentiality, research samples are only available on request.
 category: UX
-intro: Snapfish is a digital photo and e-commerce company. Photo prints are amongst the biggest sellers with 60% of customers ordering between 40 - 200 prints. The challenge was to create an application which allowed customers to organize, edit and review their prints before entering the checkout flow. Customers often received different sizes of prints within an order or found  that their photos had been cropped. This was partly due to the increase in people taking more digital photographs with varying aspect ratios from 3.4 to 1.1 and these ratios not being equivalent to print sizes. 
+intro: Snapfish is a digital photo and e-commerce company. Photo prints are amongst the biggest sellers with 60% of customers ordering between 40 - 200 prints. The challenge was to create an application which allowed customers to organize, edit and review their prints before entering the checkout flow. Customers often received different sizes of prints within an order or found  that their photos had been cropped. This was partly due to the increase in people taking more digital photographs with varying aspect ratios from 3.4 to 1.1 and these ratios not being equivalent to print sizes.
 contents:
  - image: prints_b.png
    text: I evaluated the existing print flow in the USA, Europe and Asia and then analyzed the corresponding web analytics. In tandem with this I interviewed customer service and business stakeholders. I synthesized these findings into a low-fidelity axure prototype which was used by the engineering team to create a high-fidelity prototype for user testing.  Remote moderated testing was carried out in Ireland with six participants over two days and the prototype allowed test participants to use their own Snapfish accounts and photographs.

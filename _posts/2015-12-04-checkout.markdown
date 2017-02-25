@@ -1,6 +1,10 @@
 ---
 layout: default
 modal-id: 4
+modal-prev: 3
+modal-next: 5
+modal-prev-label: SNAPFISH PHOTO PRINTS
+modal-next-label: BANK OF AMERICA
 date: 2015-12-04
 tile: checkout.png
 project: checkout
@@ -11,7 +15,7 @@ client_logo: logo_snap.png
 client_url: http://www.snapfish.com
 client-confidentiality: Due to client confidentiality, research samples are only available on request.
 category: UX
-intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors. 
+intro: The high level goal of this project was to simplify the checkout flow and improve reliability by decreasing errors.
 contents:
  - image: checkout_b.png
    caption: Purchase funnel dropout rates & user stories
@@ -20,5 +24,5 @@ contents:
  - image: checkout_c.png
    caption: Experience map
    alt:
-   text: Some of the more low risk design changes were made to the checkout flow and I did two rounds of usability testing so the team could understand what items to add to the backlog. A primary finding across all markets was that the total price needed to be displayed upfront on the cart page and not for the first time on the review page. This meant any coupons or offers, shipping options or deleted products needed to immediately be reflected in the total price. The first phase of the re-design brought all the redemption flows onto the cart page the success of which was measured by running an A/B test. A second design phase integrated the shipping options flow which was again measured by A/B testing. At the end of the second phase a final round of usability testing was completed so the design changes could be verified in the context of the full checkout flow. 
+   text: Some of the more low risk design changes were made to the checkout flow and I did two rounds of usability testing so the team could understand what items to add to the backlog. A primary finding across all markets was that the total price needed to be displayed upfront on the cart page and not for the first time on the review page. This meant any coupons or offers, shipping options or deleted products needed to immediately be reflected in the total price. The first phase of the re-design brought all the redemption flows onto the cart page the success of which was measured by running an A/B test. A second design phase integrated the shipping options flow which was again measured by A/B testing. At the end of the second phase a final round of usability testing was completed so the design changes could be verified in the context of the full checkout flow.
 ---

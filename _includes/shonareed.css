@@ -213,3 +213,18 @@ figcaption.content-caption {
   margin-top: -1em;
   margin-bottom: 1em;
 }
+
+.project-nav {
+  margin-top: -90px;
+  padding: 5px;
+}
+
+.portfolio-link.prev {
+  float: left;
+  width: 45%;
+}
+
+.portfolio-link.next {
+  float: right;
+  width: 45%;
+}
