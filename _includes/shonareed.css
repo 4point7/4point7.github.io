@@ -219,6 +219,10 @@ figcaption.content-caption {
   padding: 5px;
 }
 
+.portfolio-link {
+  cursor:pointer;
+}
+
 .portfolio-link.prev {
   float: left;
   width: 45%;
