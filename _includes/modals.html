@@ -8,7 +8,7 @@
           <div class="project-nav">
             <a goto="#portfolioModal-{{ post.modal-prev }}" class="portfolio-link prev" >
               {% if post.modal-prev %}
-              <i class="fa fa-arrow-left fa-x"></i> {{ post.modal-prev-label }}
+              <i class="fa fa-arrow-left fa-x"></i> <span class="nav-label">{{ post.modal-prev-label }}</span>
               {% else %}
               &nbsp;
               {% endif %}
@@ -16,7 +16,7 @@
             <a class="portfolio-link dismiss"><i class="fa fa-times fa-3x"></i></a>
             <a goto="#portfolioModal-{{ post.modal-next }}" class="portfolio-link next" >
               {% if post.modal-next %}
-              {{ post.modal-next-label }} <i class="fa fa-arrow-right fa-x"></i>
+              <span class="nav-label">{{ post.modal-next-label }}</span> <i class="fa fa-arrow-right fa-x"></i>
               {% else %}
               &nbsp;
               {% endif %}

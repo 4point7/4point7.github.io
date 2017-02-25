@@ -228,3 +228,12 @@ figcaption.content-caption {
   float: right;
   width: 45%;
 }
+
+@media(max-width:768px) {
+  .portfolio-link.prev, .portfolio-link.next {
+    width: 5%;
+  }
+  SPAN.nav-label {
+    display:none;
+  }
+}
