@@ -229,6 +229,10 @@ figcaption.content-caption {
   width: 45%;
 }
 
+.portfolio-link.dismiss I {
+  margin-top: -14px;
+}
+
 @media(max-width:767px) {
   .portfolio-link.prev, .portfolio-link.next {
     width: 5%;
