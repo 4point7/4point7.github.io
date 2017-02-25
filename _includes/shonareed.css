@@ -229,7 +229,7 @@ figcaption.content-caption {
   width: 45%;
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
   .portfolio-link.prev, .portfolio-link.next {
     width: 5%;
   }
